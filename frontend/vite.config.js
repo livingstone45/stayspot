@@ -6,6 +6,9 @@ import { resolve } from 'path'
 export default defineConfig({
   base: '/stayspot/',
   plugins: [react()],
+  define: {
+    'import.meta.env.VITE_API_BASE_URL': JSON.stringify('https://api.stayspot.co.ke/api'),
+  },
   resolve: {
     alias: {
       '@': resolve(__dirname, './src'),
