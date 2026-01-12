@@ -1,0 +1,2 @@
+const r=a=>{if(!a)return"/auth/login";const n=a.roles||[],e=a.role||(Array.isArray(n)&&n.length>0?n[0].name||n[0]:null);return{tenant:"/tenant",landlord:"/landlord",property_manager:"/management",company_admin:"/company",company_owner:"/company",portfolio_manager:"/company",system_admin:"/admin",admin:"/admin",leasing_specialist:"/management",maintenance_supervisor:"/management",financial_controller:"/company"}[e]||"/tenant"};export{r as g};
+//# sourceMappingURL=roleRedirection-21b9e312.js.map
