@@ -1,132 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StaySpot - Property Management System</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #333;
-        }
-        
-        .container {
-            background: white;
-            padding: 60px 40px;
-            border-radius: 15px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-            text-align: center;
-            max-width: 600px;
-        }
-        
-        h1 {
-            color: #667eea;
-            font-size: 48px;
-            margin-bottom: 20px;
-        }
-        
-        p {
-            color: #666;
-            font-size: 18px;
-            line-height: 1.6;
-            margin-bottom: 30px;
-        }
-        
-        .status {
-            background: #f0f4ff;
-            padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 30px;
-            border-left: 4px solid #667eea;
-        }
-        
-        .status-item {
-            margin: 10px 0;
-            font-size: 16px;
-        }
-        
-        .status-item.success::before {
-            content: "✅ ";
-            color: #10b981;
-        }
-        
-        .status-item.progress::before {
-            content: "⏳ ";
-            color: #f59e0b;
-        }
-        
-        .links {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        
-        a {
-            display: inline-block;
-            padding: 12px 30px;
-            margin: 5px;
-            background: #667eea;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            transition: background 0.3s;
-            font-weight: 500;
-        }
-        
-        a:hover {
-            background: #764ba2;
-        }
-        
-        .secondary {
-            background: #f3f4f6;
-            color: #333;
-        }
-        
-        .secondary:hover {
-            background: #e5e7eb;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>🏠 StaySpot</h1>
-        <p>Professional Property Management System</p>
-        
-        <div class="status">
-            <div class="status-item success">System Deployed Successfully</div>
-            <div class="status-item success">Backend Ready</div>
-            <div class="status-item success">Database Connected</div>
-            <div class="status-item success">GitHub Pages Live</div>
-        </div>
-        
-        <p>Your StaySpot property management platform is now live and ready to use!</p>
-        
-        <div class="links">
-            <a href="https://github.com/livingstone45/stayspot" target="_blank">View Code</a>
-            <a href="https://github.com/livingstone45/stayspot/actions" target="_blank">Deployment Status</a>
-            <a href="#" class="secondary" title="Coming soon">Dashboard</a>
-        </div>
-        
-        <div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #e5e7eb; font-size: 14px; color: #999;">
-            <p>🚀 Deployed on GitHub Pages</p>
-            <p>📊 Last Updated: <span id="date"></span></p>
-        </div>
-    </div>
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stayspot</title>
+    <script type="module" crossorigin src="/assets/index-25e3517a.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/vendor-8b2b8b4f.js">
+    <link rel="modulepreload" crossorigin href="/assets/charts-9ec29004.js">
+    <link rel="modulepreload" crossorigin href="/assets/router-5c3dff30.js">
+    <link rel="modulepreload" crossorigin href="/assets/maps-f59a35be.js">
+    <link rel="stylesheet" href="/assets/index-8579bb94.css">
+  </head>
+  <body>
+    <div id="root"></div>
     
-    <script>
-        document.getElementById('date').textContent = new Date().toLocaleString();
-    </script>
-</body>
-</html>
+  </body>
+  </html>
