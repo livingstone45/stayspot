@@ -1,0 +1,100 @@
+name: Full Stack Deploy - Frontend, Backend & Database
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    services:
+      mysql:
+        image: mysql:8.0
+        env:
+          MYSQL_ROOT_PASSWORD: rootpassword
+          MYSQL_DATABASE: stayspot_db
+        options: >-
+          --health-cmd="mysqladmin ping"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=3
+        ports:
+          - 3306:3306
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Setup Database
+        run: |
+          mysql -h 127.0.0.1 -u root -prootpassword stayspot_db < database/schemas/stayspot_schema.sql
+        env:
+          MYSQL_PWD: rootpassword
+
+      - name: Run Database Migrations
+        run: npm run migrate
+        continue-on-error: true
+
+      - name: Build backend
+        run: npm run build:backend
+
+      - name: Build frontend
+        run: npm run build:frontend
+
+      - name: Create deployment package
+        run: |
+          mkdir -p deploy-package
+          cp -r backend/dist deploy-package/backend
+          cp -r frontend/dist deploy-package/frontend
+          cp -r database deploy-package/
+          cp package.json deploy-package/
+          cp package-lock.json deploy-package/
+
+      - name: Deploy Frontend to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./frontend/dist
+          cname: stayspot.co.ke
+
+      - name: Deploy Backend to Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            deploy-package/**/*
+            database/schemas/stayspot_schema.sql
+          tag_name: v${{ github.run_number }}
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Database Backup to Artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: database-backup
+          path: database/schemas/stayspot_schema.sql
+          retention-days: 30
+
+      - name: Deployment Success
+        run: |
+          echo "✅ Frontend deployed to GitHub Pages"
+          echo "✅ Backend deployed to GitHub Releases"
+          echo "✅ Database schema backed up"
+          echo ""
+          echo "🌐 Access your website:"
+          echo "Frontend: https://stayspot.co.ke"
+          echo "Backend API: Check Releases for deployment package"

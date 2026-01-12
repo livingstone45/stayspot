@@ -1,0 +1,398 @@
+[32m[32minfo[32m[39m: [32mStorage service using local storage[39m {"timestamp":"2025-12-20 00:36:16:3616"}
+INFO: Automation triggers initialized {}
+INFO: Notification worker initialized {}
+INFO: Workflow registered: property_upload {}
+INFO: Workflow registered: tenant_onboarding {}
+INFO: Workflow registered: maintenance_request {}
+INFO: Workflow registered: task_assignment {}
+INFO: Workflow registered: payment_processing {}
+INFO: Trigger registered: property.created -> property_upload {}
+INFO: Trigger registered: property.updated -> property_sync {}
+INFO: Trigger registered: property.status_changed -> status_update_workflow {}
+INFO: Trigger registered: tenant.application_submitted -> tenant_onboarding {}
+INFO: Trigger registered: tenant.move_in -> move_in_coordination {}
+INFO: Trigger registered: tenant.move_out -> move_out_coordination {}
+INFO: Trigger registered: maintenance.request_submitted -> maintenance_request {}
+INFO: Trigger registered: maintenance.emergency -> emergency_maintenance {}
+INFO: Trigger registered: maintenance.completed -> maintenance_completion {}
+INFO: Trigger registered: task.created -> task_assignment {}
+INFO: Trigger registered: task.overdue -> overdue_task_handling {}
+INFO: Trigger registered: task.completed -> task_completion {}
+INFO: Trigger registered: payment.due -> payment_reminder {}
+INFO: Trigger registered: payment.received -> payment_processing {}
+INFO: Trigger registered: payment.overdue -> late_payment_handling {}
+INFO: Trigger registered: system.daily -> daily_maintenance {}
+INFO: Trigger registered: system.weekly -> weekly_reporting {}
+INFO: Trigger registered: system.monthly -> monthly_billing {}
+INFO: Automation triggers initialized {}
+INFO: Property worker initialized {}
+INFO: Sync worker initialized {}
+Ignoring invalid configuration option passed to Connection: collate. This is currently a warning, but in future versions of MySQL2, an error will be thrown if you pass an invalid configuration option to a Connection
+✅ Database connection established successfully
+Ignoring invalid configuration option passed to Connection: collate. This is currently a warning, but in future versions of MySQL2, an error will be thrown if you pass an invalid configuration option to a Connection
+✅ Database connection established successfully
+✅ Database connection established successfully.
+🚀 Server running on port 5000
+📊 Environment: development
+🔗 API URL: http://localhost:5000/api
+✅ Database: Connected to stayspot_db
+🌐 Frontend URL: http://localhost:3000
+❌ SMTP connection error: Error: Missing credentials for "PLAIN"
+    at SMTPConnection._formatError (/home/techhatch/Documents/stayspot/node_modules/nodemailer/lib/smtp-connection/index.js:809:19)
+    at SMTPConnection.login (/home/techhatch/Documents/stayspot/node_modules/nodemailer/lib/smtp-connection/index.js:454:38)
+    at /home/techhatch/Documents/stayspot/node_modules/nodemailer/lib/smtp-transport/index.js:375:32
+    at SMTPConnection.<anonymous> (/home/techhatch/Documents/stayspot/node_modules/nodemailer/lib/smtp-connection/index.js:215:17)
+    at Object.onceWrapper (node:events:638:28)
+    at SMTPConnection.emit (node:events:524:28)
+    at SMTPConnection._actionEHLO (/home/techhatch/Documents/stayspot/node_modules/nodemailer/lib/smtp-connection/index.js:1371:14)
+    at SMTPConnection._processResponse (/home/techhatch/Documents/stayspot/node_modules/nodemailer/lib/smtp-connection/index.js:993:20)
+    at SMTPConnection._onData (/home/techhatch/Documents/stayspot/node_modules/nodemailer/lib/smtp-connection/index.js:774:14)
+    at SMTPConnection._onSocketData (/home/techhatch/Documents/stayspot/node_modules/nodemailer/lib/smtp-connection/index.js:195:44)
+    at TLSSocket.emit (node:events:524:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:191:23) {
+  code: 'EAUTH',
+  command: 'API'
+}
+[0mGET /health [32m200[0m 6.803 ms - 121[0m
+Ignoring invalid configuration option passed to Connection: collate. This is currently a warning, but in future versions of MySQL2, an error will be thrown if you pass an invalid configuration option to a Connection
+✅ Database connection established successfully
+Ignoring invalid configuration option passed to Connection: collate. This is currently a warning, but in future versions of MySQL2, an error will be thrown if you pass an invalid configuration option to a Connection
+✅ Database connection established successfully
+Ignoring invalid configuration option passed to Connection: collate. This is currently a warning, but in future versions of MySQL2, an error will be thrown if you pass an invalid configuration option to a Connection
+✅ Database connection established successfully
+Production error: {
+  name: undefined,
+  message: 'Not allowed by CORS',
+  statusCode: undefined,
+  code: undefined,
+  url: '/api/auth/register',
+  method: 'OPTIONS',
+  ip: '::1',
+  user: undefined,
+  timestamp: '2025-12-19T21:38:11.723Z'
+}
+Ignoring invalid configuration option passed to Connection: collate. This is currently a warning, but in future versions of MySQL2, an error will be thrown if you pass an invalid configuration option to a Connection
+✅ Database connection established successfully
+Production error: {
+  name: undefined,
+  message: 'Not allowed by CORS',
+  statusCode: undefined,
+  code: undefined,
+  url: '/api/auth/register',
+  method: 'OPTIONS',
+  ip: '::1',
+  user: undefined,
+  timestamp: '2025-12-19T21:38:24.133Z'
+}
+Production error: {
+  name: undefined,
+  message: 'Not allowed by CORS',
+  statusCode: undefined,
+  code: undefined,
+  url: '/api/auth/register',
+  method: 'OPTIONS',
+  ip: '::1',
+  user: undefined,
+  timestamp: '2025-12-19T21:38:24.976Z'
+}
+Production error: {
+  name: undefined,
+  message: 'Not allowed by CORS',
+  statusCode: undefined,
+  code: undefined,
+  url: '/api/auth/register',
+  method: 'OPTIONS',
+  ip: '::1',
+  user: undefined,
+  timestamp: '2025-12-19T21:38:25.151Z'
+}
+Production error: {
+  name: undefined,
+  message: 'Not allowed by CORS',
+  statusCode: undefined,
+  code: undefined,
+  url: '/api/auth/register',
+  method: 'OPTIONS',
+  ip: '::1',
+  user: undefined,
+  timestamp: '2025-12-19T21:38:25.312Z'
+}
+Production error: {
+  name: undefined,
+  message: 'Not allowed by CORS',
+  statusCode: undefined,
+  code: undefined,
+  url: '/api/auth/register',
+  method: 'OPTIONS',
+  ip: '::1',
+  user: undefined,
+  timestamp: '2025-12-19T21:38:25.463Z'
+}
+Production error: {
+  name: undefined,
+  message: 'Not allowed by CORS',
+  statusCode: undefined,
+  code: undefined,
+  url: '/api/auth/register',
+  method: 'OPTIONS',
+  ip: '::1',
+  user: undefined,
+  timestamp: '2025-12-19T21:38:26.050Z'
+}
+Production error: {
+  name: undefined,
+  message: 'Not allowed by CORS',
+  statusCode: undefined,
+  code: undefined,
+  url: '/api/auth/register',
+  method: 'OPTIONS',
+  ip: '::1',
+  user: undefined,
+  timestamp: '2025-12-19T21:38:26.223Z'
+}
+Production error: {
+  name: undefined,
+  message: 'Not allowed by CORS',
+  statusCode: undefined,
+  code: undefined,
+  url: '/api/auth/register',
+  method: 'OPTIONS',
+  ip: '::1',
+  user: undefined,
+  timestamp: '2025-12-19T21:38:26.941Z'
+}
+Production error: {
+  name: undefined,
+  message: 'Not allowed by CORS',
+  statusCode: undefined,
+  code: undefined,
+  url: '/api/auth/register',
+  method: 'OPTIONS',
+  ip: '::1',
+  user: undefined,
+  timestamp: '2025-12-19T21:38:27.421Z'
+}
+Production error: {
+  name: undefined,
+  message: 'Not allowed by CORS',
+  statusCode: undefined,
+  code: undefined,
+  url: '/api/auth/register',
+  method: 'OPTIONS',
+  ip: '::1',
+  user: undefined,
+  timestamp: '2025-12-19T21:38:27.612Z'
+}
+Production error: {
+  name: undefined,
+  message: 'Not allowed by CORS',
+  statusCode: undefined,
+  code: undefined,
+  url: '/api/auth/register',
+  method: 'OPTIONS',
+  ip: '::1',
+  user: undefined,
+  timestamp: '2025-12-19T21:38:27.776Z'
+}
+Production error: {
+  name: undefined,
+  message: 'Not allowed by CORS',
+  statusCode: undefined,
+  code: undefined,
+  url: '/api/auth/register',
+  method: 'OPTIONS',
+  ip: '::1',
+  user: undefined,
+  timestamp: '2025-12-19T21:38:28.580Z'
+}
+Ignoring invalid configuration option passed to Connection: collate. This is currently a warning, but in future versions of MySQL2, an error will be thrown if you pass an invalid configuration option to a Connection
+✅ Database connection established successfully
+Ignoring invalid configuration option passed to Connection: collate. This is currently a warning, but in future versions of MySQL2, an error will be thrown if you pass an invalid configuration option to a Connection
+✅ Database connection established successfully
+Ignoring invalid configuration option passed to Connection: collate. This is currently a warning, but in future versions of MySQL2, an error will be thrown if you pass an invalid configuration option to a Connection
+✅ Database connection established successfully
+Register called with email: networktest@example.com
+About to check if user exists with raw SQL
+About to INSERT user
+INSERT successful
+Fetching newly created user
+User fetch successful, newUser: [
+  {
+    id: 22,
+    email: 'networktest@example.com',
+    first_name: 'Test',
+    last_name: 'User',
+    phone: '+1234567890'
+  }
+]
+User ID extracted: 22
+[0mPOST /api/auth/register [32m201[0m 149.443 ms - 413[0m
+Ignoring invalid configuration option passed to Connection: collate. This is currently a warning, but in future versions of MySQL2, an error will be thrown if you pass an invalid configuration option to a Connection
+✅ Database connection established successfully
+Register called with email: networktest@example.com
+About to check if user exists with raw SQL
+Ignoring invalid configuration option passed to Connection: collate. This is currently a warning, but in future versions of MySQL2, an error will be thrown if you pass an invalid configuration option to a Connection
+✅ Database connection established successfully
+[0mPOST /api/auth/register [33m409[0m 39.282 ms - 52[0m
+Ignoring invalid configuration option passed to Connection: collate. This is currently a warning, but in future versions of MySQL2, an error will be thrown if you pass an invalid configuration option to a Connection
+✅ Database connection established successfully
+Ignoring invalid configuration option passed to Connection: collate. This is currently a warning, but in future versions of MySQL2, an error will be thrown if you pass an invalid configuration option to a Connection
+✅ Database connection established successfully
+Register called with email: john2025@test.com
+About to check if user exists with raw SQL
+About to INSERT user
+INSERT successful
+Fetching newly created user
+User fetch successful, newUser: [
+  {
+    id: 23,
+    email: 'john2025@test.com',
+    first_name: 'John',
+    last_name: 'Doe',
+    phone: '+1111111111'
+  }
+]
+User ID extracted: 23
+[0mPOST /api/auth/register [32m201[0m 206.115 ms - 398[0m
+Ignoring invalid configuration option passed to Connection: collate. This is currently a warning, but in future versions of MySQL2, an error will be thrown if you pass an invalid configuration option to a Connection
+✅ Database connection established successfully
+Ignoring invalid configuration option passed to Connection: collate. This is currently a warning, but in future versions of MySQL2, an error will be thrown if you pass an invalid configuration option to a Connection
+✅ Database connection established successfully
+Ignoring invalid configuration option passed to Connection: collate. This is currently a warning, but in future versions of MySQL2, an error will be thrown if you pass an invalid configuration option to a Connection
+✅ Database connection established successfully
+Register called with email: alice2025@test.com
+About to check if user exists with raw SQL
+Ignoring invalid configuration option passed to Connection: collate. This is currently a warning, but in future versions of MySQL2, an error will be thrown if you pass an invalid configuration option to a Connection
+✅ Database connection established successfully
+About to INSERT user
+INSERT successful
+Fetching newly created user
+User fetch successful, newUser: [
+  {
+    id: 24,
+    email: 'alice2025@test.com',
+    first_name: 'Alice',
+    last_name: 'Smith',
+    phone: '+1234567890'
+  }
+]
+User ID extracted: 24
+[0mPOST /api/auth/register [32m201[0m 153.372 ms - 403[0m
+[0mHEAD /api/health [33m404[0m 0.553 ms - 87[0m
+Production error: {
+  name: undefined,
+  message: 'Not allowed by CORS',
+  statusCode: undefined,
+  code: undefined,
+  url: '/api/auth/register',
+  method: 'OPTIONS',
+  ip: '::1',
+  user: undefined,
+  timestamp: '2025-12-19T21:43:32.388Z'
+}
+Production error: {
+  name: undefined,
+  message: 'Not allowed by CORS',
+  statusCode: undefined,
+  code: undefined,
+  url: '/api/auth/register',
+  method: 'HEAD',
+  ip: '::1',
+  user: undefined,
+  timestamp: '2025-12-19T21:43:35.996Z'
+}
+Ignoring invalid configuration option passed to Connection: collate. This is currently a warning, but in future versions of MySQL2, an error will be thrown if you pass an invalid configuration option to a Connection
+✅ Database connection established successfully
+[32m[32minfo[32m[39m: [32mStorage service using local storage[39m {"timestamp":"2025-12-20 00:45:43:4543"}
+INFO: Automation triggers initialized {}
+INFO: Notification worker initialized {}
+INFO: Workflow registered: property_upload {}
+INFO: Workflow registered: tenant_onboarding {}
+INFO: Workflow registered: maintenance_request {}
+INFO: Workflow registered: task_assignment {}
+INFO: Workflow registered: payment_processing {}
+INFO: Trigger registered: property.created -> property_upload {}
+INFO: Trigger registered: property.updated -> property_sync {}
+INFO: Trigger registered: property.status_changed -> status_update_workflow {}
+INFO: Trigger registered: tenant.application_submitted -> tenant_onboarding {}
+INFO: Trigger registered: tenant.move_in -> move_in_coordination {}
+INFO: Trigger registered: tenant.move_out -> move_out_coordination {}
+INFO: Trigger registered: maintenance.request_submitted -> maintenance_request {}
+INFO: Trigger registered: maintenance.emergency -> emergency_maintenance {}
+INFO: Trigger registered: maintenance.completed -> maintenance_completion {}
+INFO: Trigger registered: task.created -> task_assignment {}
+INFO: Trigger registered: task.overdue -> overdue_task_handling {}
+INFO: Trigger registered: task.completed -> task_completion {}
+INFO: Trigger registered: payment.due -> payment_reminder {}
+INFO: Trigger registered: payment.received -> payment_processing {}
+INFO: Trigger registered: payment.overdue -> late_payment_handling {}
+INFO: Trigger registered: system.daily -> daily_maintenance {}
+INFO: Trigger registered: system.weekly -> weekly_reporting {}
+INFO: Trigger registered: system.monthly -> monthly_billing {}
+INFO: Automation triggers initialized {}
+INFO: Property worker initialized {}
+INFO: Sync worker initialized {}
+Ignoring invalid configuration option passed to Connection: collate. This is currently a warning, but in future versions of MySQL2, an error will be thrown if you pass an invalid configuration option to a Connection
+✅ Database connection established successfully
+Ignoring invalid configuration option passed to Connection: collate. This is currently a warning, but in future versions of MySQL2, an error will be thrown if you pass an invalid configuration option to a Connection
+✅ Database connection established successfully
+✅ Database connection established successfully.
+🚀 Server running on port 5000
+📊 Environment: development
+🔗 API URL: http://localhost:5000/api
+✅ Database: Connected to stayspot_db
+🌐 Frontend URL: http://localhost:3000
+❌ SMTP connection error: Error: Missing credentials for "PLAIN"
+    at SMTPConnection._formatError (/home/techhatch/Documents/stayspot/node_modules/nodemailer/lib/smtp-connection/index.js:809:19)
+    at SMTPConnection.login (/home/techhatch/Documents/stayspot/node_modules/nodemailer/lib/smtp-connection/index.js:454:38)
+    at /home/techhatch/Documents/stayspot/node_modules/nodemailer/lib/smtp-transport/index.js:375:32
+    at SMTPConnection.<anonymous> (/home/techhatch/Documents/stayspot/node_modules/nodemailer/lib/smtp-connection/index.js:215:17)
+    at Object.onceWrapper (node:events:638:28)
+    at SMTPConnection.emit (node:events:524:28)
+    at SMTPConnection._actionEHLO (/home/techhatch/Documents/stayspot/node_modules/nodemailer/lib/smtp-connection/index.js:1371:14)
+    at SMTPConnection._processResponse (/home/techhatch/Documents/stayspot/node_modules/nodemailer/lib/smtp-connection/index.js:993:20)
+    at SMTPConnection._onData (/home/techhatch/Documents/stayspot/node_modules/nodemailer/lib/smtp-connection/index.js:774:14)
+    at SMTPConnection._onSocketData (/home/techhatch/Documents/stayspot/node_modules/nodemailer/lib/smtp-connection/index.js:195:44)
+    at TLSSocket.emit (node:events:524:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:191:23) {
+  code: 'EAUTH',
+  command: 'API'
+}
+[0mGET /health [32m200[0m 8.655 ms - 121[0m
+Production error: {
+  name: undefined,
+  message: 'Not allowed by CORS',
+  statusCode: undefined,
+  code: undefined,
+  url: '/api/auth/register',
+  method: 'POST',
+  ip: '::1',
+  user: undefined,
+  timestamp: '2025-12-19T21:45:54.999Z'
+}
+Register called with email: bob2025@test.com
+About to check if user exists with raw SQL
+Ignoring invalid configuration option passed to Connection: collate. This is currently a warning, but in future versions of MySQL2, an error will be thrown if you pass an invalid configuration option to a Connection
+✅ Database connection established successfully
+About to INSERT user
+INSERT successful
+Fetching newly created user
+User fetch successful, newUser: [
+  {
+    id: 25,
+    email: 'bob2025@test.com',
+    first_name: 'Bob',
+    last_name: 'Jones',
+    phone: '+1234567890'
+  }
+]
+User ID extracted: 25
+[0mPOST /api/auth/register [32m201[0m 198.726 ms - 397[0m
+Ignoring invalid configuration option passed to Connection: collate. This is currently a warning, but in future versions of MySQL2, an error will be thrown if you pass an invalid configuration option to a Connection
+✅ Database connection established successfully

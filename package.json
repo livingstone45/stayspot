@@ -1,0 +1,31 @@
+{
+  "name": "stayspot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Monorepo for StaySpot (backend + frontend)",
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "install-all": "npm install",
+    "dev:backend": "npm --workspace=backend run dev",
+    "dev:frontend": "npm --workspace=frontend run dev",
+    "build:backend": "npm --workspace=backend run build",
+    "build:frontend": "npm --workspace=frontend run build",
+    "start:backend": "npm --workspace=backend run start",
+    "start:frontend": "npm --workspace=frontend run start",
+    "test": "npm run test --workspaces",
+    "lint": "npm run lint --workspaces"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "dependencies": {
+    "bull": "^4.16.5",
+    "joi": "^18.0.2",
+    "node-geocoder": "^4.4.1",
+    "stripe": "^20.1.0"
+  }
+}

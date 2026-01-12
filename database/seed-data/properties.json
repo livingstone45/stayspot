@@ -1,0 +1,859 @@
+[
+  {
+    "id": "prop-001",
+    "title": "Luxury Upper West Side Apartment",
+    "type": "apartment",
+    "status": "active",
+    "rentalStatus": "occupied",
+    "location": {
+      "street": "100 Central Park West",
+      "city": "New York",
+      "state": "NY",
+      "country": "USA",
+      "zipCode": "10023",
+      "latitude": 40.7829,
+      "longitude": -73.9654,
+      "neighborhood": "Upper West Side"
+    },
+    "dimensions": {
+      "totalArea": 2500,
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "floors": 1,
+      "yearBuilt": 2010,
+      "areaUnit": "sqft"
+    },
+    "pricing": {
+      "monthlyRent": 5000,
+      "securityDeposit": 10000,
+      "petDeposit": 2000
+    },
+    "features": ["air_conditioning", "heating", "dishwasher", "washer_dryer", "balcony", "hardwood_floors"],
+    "amenities": ["elevator", "security_system", "doorman", "gym", "storage"],
+    "utilities": [
+      {"type": "electricity", "provider": "City Electric", "paymentStatus": "tenant_paid"},
+      {"type": "water", "provider": "Municipal Water", "paymentStatus": "included"},
+      {"type": "gas", "provider": "Natural Gas Co", "paymentStatus": "tenant_paid"}
+    ],
+    "leaseType": "residential",
+    "furnitureStatus": "unfurnished",
+    "petPolicy": "cats_and_dogs",
+    "description": "Stunning luxury apartment with Central Park views, high ceilings, and premium finishes",
+    "createdAt": "2023-01-15",
+    "updatedAt": "2024-01-10"
+  },
+  {
+    "id": "prop-002",
+    "title": "Modern Midtown Studio",
+    "type": "studio",
+    "status": "active",
+    "rentalStatus": "available",
+    "location": {
+      "street": "500 5th Avenue",
+      "city": "New York",
+      "state": "NY",
+      "country": "USA",
+      "zipCode": "10110",
+      "latitude": 40.7538,
+      "longitude": -73.9830,
+      "neighborhood": "Midtown Manhattan"
+    },
+    "dimensions": {
+      "totalArea": 600,
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "floors": 1,
+      "yearBuilt": 2015,
+      "areaUnit": "sqft"
+    },
+    "pricing": {
+      "monthlyRent": 2000,
+      "securityDeposit": 4000,
+      "petDeposit": 500
+    },
+    "features": ["air_conditioning", "heating", "washer_dryer", "tile_floors"],
+    "amenities": ["elevator", "security_system", "gym"],
+    "utilities": [
+      {"type": "electricity", "provider": "City Electric", "paymentStatus": "tenant_paid"},
+      {"type": "water", "provider": "Municipal Water", "paymentStatus": "included"}
+    ],
+    "leaseType": "residential",
+    "furnitureStatus": "unfurnished",
+    "petPolicy": "no_pets",
+    "description": "Compact modern studio in prime Midtown location, perfect for professionals",
+    "createdAt": "2023-02-20",
+    "updatedAt": "2024-01-05"
+  },
+  {
+    "id": "prop-003",
+    "title": "Chelsea Loft",
+    "type": "apartment",
+    "status": "active",
+    "rentalStatus": "occupied",
+    "location": {
+      "street": "200 10th Avenue",
+      "city": "New York",
+      "state": "NY",
+      "country": "USA",
+      "zipCode": "10011",
+      "latitude": 40.7505,
+      "longitude": -74.0017,
+      "neighborhood": "Chelsea"
+    },
+    "dimensions": {
+      "totalArea": 1800,
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "floors": 1,
+      "yearBuilt": 2012,
+      "areaUnit": "sqft"
+    },
+    "pricing": {
+      "monthlyRent": 4500,
+      "securityDeposit": 9000,
+      "petDeposit": 1500
+    },
+    "features": ["air_conditioning", "heating", "dishwasher", "washer_dryer", "loft_ceiling", "industrial_style"],
+    "amenities": ["elevator", "security_system", "storage"],
+    "utilities": [
+      {"type": "electricity", "provider": "City Electric", "paymentStatus": "tenant_paid"},
+      {"type": "gas", "provider": "Natural Gas Co", "paymentStatus": "tenant_paid"}
+    ],
+    "leaseType": "residential",
+    "furnitureStatus": "unfurnished",
+    "petPolicy": "all_pets",
+    "description": "Trendy Chelsea loft with original features and contemporary upgrades",
+    "createdAt": "2023-03-10",
+    "updatedAt": "2024-01-08"
+  },
+  {
+    "id": "prop-004",
+    "title": "Brooklyn Brownstone",
+    "type": "townhouse",
+    "status": "active",
+    "rentalStatus": "occupied",
+    "location": {
+      "street": "300 Henry Street",
+      "city": "New York",
+      "state": "NY",
+      "country": "USA",
+      "zipCode": "11201",
+      "latitude": 40.6996,
+      "longitude": -73.9919,
+      "neighborhood": "Brooklyn Heights"
+    },
+    "dimensions": {
+      "totalArea": 3000,
+      "bedrooms": 5,
+      "bathrooms": 3,
+      "floors": 4,
+      "yearBuilt": 1890,
+      "areaUnit": "sqft"
+    },
+    "pricing": {
+      "monthlyRent": 6000,
+      "securityDeposit": 12000,
+      "petDeposit": 3000
+    },
+    "features": ["air_conditioning", "heating", "fireplace", "hardwood_floors", "garden"],
+    "amenities": ["storage", "backyard"],
+    "utilities": [
+      {"type": "electricity", "provider": "Con Edison", "paymentStatus": "tenant_paid"},
+      {"type": "water", "provider": "Brooklyn Water", "paymentStatus": "included"},
+      {"type": "heating", "provider": "Natural Gas", "paymentStatus": "tenant_paid"}
+    ],
+    "leaseType": "residential",
+    "furnitureStatus": "unfurnished",
+    "petPolicy": "cats_and_dogs",
+    "description": "Elegant historic brownstone with modern updates, perfect family home",
+    "createdAt": "2023-04-05",
+    "updatedAt": "2024-01-12"
+  },
+  {
+    "id": "prop-005",
+    "title": "Park Slope Condo",
+    "type": "condo",
+    "status": "active",
+    "rentalStatus": "available",
+    "location": {
+      "street": "400 7th Avenue",
+      "city": "New York",
+      "state": "NY",
+      "country": "USA",
+      "zipCode": "11215",
+      "latitude": 40.6756,
+      "longitude": -73.9855,
+      "neighborhood": "Park Slope"
+    },
+    "dimensions": {
+      "totalArea": 1500,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "floors": 1,
+      "yearBuilt": 2005,
+      "areaUnit": "sqft"
+    },
+    "pricing": {
+      "monthlyRent": 3500,
+      "securityDeposit": 7000,
+      "petDeposit": 1000
+    },
+    "features": ["air_conditioning", "heating", "dishwasher", "hardwood_floors", "windows"],
+    "amenities": ["elevator", "gym", "storage"],
+    "utilities": [
+      {"type": "electricity", "provider": "Con Edison", "paymentStatus": "tenant_paid"},
+      {"type": "water", "provider": "Brooklyn Water", "paymentStatus": "included"}
+    ],
+    "leaseType": "residential",
+    "furnitureStatus": "unfurnished",
+    "petPolicy": "cats_only",
+    "description": "Beautiful condo near Prospect Park with excellent amenities",
+    "createdAt": "2023-05-01",
+    "updatedAt": "2024-01-09"
+  },
+  {
+    "id": "prop-006",
+    "title": "Suburban Family Home",
+    "type": "house",
+    "status": "active",
+    "rentalStatus": "occupied",
+    "location": {
+      "street": "100 Oak Drive",
+      "city": "Chicago",
+      "state": "IL",
+      "country": "USA",
+      "zipCode": "60301",
+      "latitude": 41.8337,
+      "longitude": -87.7254,
+      "neighborhood": "Oak Park"
+    },
+    "dimensions": {
+      "totalArea": 3500,
+      "bedrooms": 4,
+      "bathrooms": 2.5,
+      "floors": 2,
+      "yearBuilt": 1995,
+      "lotSize": 0.25,
+      "areaUnit": "sqft"
+    },
+    "pricing": {
+      "monthlyRent": 3500,
+      "securityDeposit": 7000,
+      "petDeposit": 1500
+    },
+    "features": ["air_conditioning", "heating", "garage", "garden", "patio"],
+    "amenities": ["parking", "backyard", "storage"],
+    "utilities": [
+      {"type": "electricity", "provider": "ComEd", "paymentStatus": "tenant_paid"},
+      {"type": "water", "provider": "City Water", "paymentStatus": "included"},
+      {"type": "gas", "provider": "Nicor Gas", "paymentStatus": "tenant_paid"}
+    ],
+    "leaseType": "residential",
+    "furnitureStatus": "unfurnished",
+    "petPolicy": "all_pets",
+    "description": "Spacious suburban home ideal for families with large yard",
+    "createdAt": "2023-06-15",
+    "updatedAt": "2024-01-11"
+  },
+  {
+    "id": "prop-007",
+    "title": "Executive Townhome",
+    "type": "townhouse",
+    "status": "active",
+    "rentalStatus": "available",
+    "location": {
+      "street": "200 Elm Street",
+      "city": "Chicago",
+      "state": "IL",
+      "country": "USA",
+      "zipCode": "60302",
+      "latitude": 41.8250,
+      "longitude": -87.7300,
+      "neighborhood": "Forest Park"
+    },
+    "dimensions": {
+      "totalArea": 2800,
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "floors": 3,
+      "yearBuilt": 2008,
+      "areaUnit": "sqft"
+    },
+    "pricing": {
+      "monthlyRent": 3200,
+      "securityDeposit": 6400,
+      "petDeposit": 1000
+    },
+    "features": ["air_conditioning", "heating", "dishwasher", "washer_dryer", "garage"],
+    "amenities": ["parking", "storage"],
+    "utilities": [
+      {"type": "electricity", "provider": "ComEd", "paymentStatus": "tenant_paid"},
+      {"type": "water", "provider": "City Water", "paymentStatus": "included"}
+    ],
+    "leaseType": "residential",
+    "furnitureStatus": "unfurnished",
+    "petPolicy": "dogs_only",
+    "description": "Modern townhome with contemporary finishes and garage",
+    "createdAt": "2023-07-20",
+    "updatedAt": "2024-01-07"
+  },
+  {
+    "id": "prop-008",
+    "title": "Cozy Apartment",
+    "type": "apartment",
+    "status": "active",
+    "rentalStatus": "occupied",
+    "location": {
+      "street": "300 Maple Avenue",
+      "city": "Chicago",
+      "state": "IL",
+      "country": "USA",
+      "zipCode": "60303",
+      "latitude": 41.8150,
+      "longitude": -87.7400,
+      "neighborhood": "Riverside"
+    },
+    "dimensions": {
+      "totalArea": 1200,
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "floors": 1,
+      "yearBuilt": 2010,
+      "areaUnit": "sqft"
+    },
+    "pricing": {
+      "monthlyRent": 2000,
+      "securityDeposit": 4000,
+      "petDeposit": 500
+    },
+    "features": ["air_conditioning", "heating", "tile_floors"],
+    "amenities": ["elevator", "storage"],
+    "utilities": [
+      {"type": "electricity", "provider": "ComEd", "paymentStatus": "tenant_paid"},
+      {"type": "water", "provider": "City Water", "paymentStatus": "included"}
+    ],
+    "leaseType": "residential",
+    "furnitureStatus": "unfurnished",
+    "petPolicy": "no_pets",
+    "description": "Affordable cozy apartment with essential amenities",
+    "createdAt": "2023-08-10",
+    "updatedAt": "2024-01-06"
+  },
+  {
+    "id": "prop-009",
+    "title": "Beachfront Penthouse",
+    "type": "villa",
+    "status": "active",
+    "rentalStatus": "occupied",
+    "location": {
+      "street": "1000 Ocean Drive",
+      "city": "Miami",
+      "state": "FL",
+      "country": "USA",
+      "zipCode": "33139",
+      "latitude": 25.7814,
+      "longitude": -80.1231,
+      "neighborhood": "South Beach"
+    },
+    "dimensions": {
+      "totalArea": 4500,
+      "bedrooms": 5,
+      "bathrooms": 4,
+      "floors": 2,
+      "yearBuilt": 2015,
+      "areaUnit": "sqft"
+    },
+    "pricing": {
+      "monthlyRent": 8000,
+      "securityDeposit": 16000,
+      "petDeposit": 3000
+    },
+    "features": ["air_conditioning", "heating", "pool", "hot_tub", "ocean_view", "balcony"],
+    "amenities": ["elevator", "security_system", "gym", "concierge", "valet_parking"],
+    "utilities": [
+      {"type": "electricity", "provider": "FPL", "paymentStatus": "tenant_paid"},
+      {"type": "water", "provider": "Miami Water", "paymentStatus": "included"},
+      {"type": "internet", "provider": "Comcast", "paymentStatus": "included"}
+    ],
+    "leaseType": "residential",
+    "furnitureStatus": "semi_furnished",
+    "petPolicy": "cats_and_dogs",
+    "description": "Luxurious beachfront penthouse with private pool and ocean views",
+    "createdAt": "2023-09-05",
+    "updatedAt": "2024-01-14"
+  },
+  {
+    "id": "prop-010",
+    "title": "Oceanview Resort Condo",
+    "type": "condo",
+    "status": "active",
+    "rentalStatus": "available",
+    "location": {
+      "street": "1100 Collins Avenue",
+      "city": "Miami",
+      "state": "FL",
+      "country": "USA",
+      "zipCode": "33140",
+      "latitude": 25.7912,
+      "longitude": -80.1204,
+      "neighborhood": "Mid-Beach"
+    },
+    "dimensions": {
+      "totalArea": 2200,
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "floors": 1,
+      "yearBuilt": 2012,
+      "areaUnit": "sqft"
+    },
+    "pricing": {
+      "monthlyRent": 5000,
+      "securityDeposit": 10000,
+      "petDeposit": 2000
+    },
+    "features": ["air_conditioning", "heating", "balcony", "ocean_view", "washer_dryer"],
+    "amenities": ["elevator", "pool", "gym", "security_system"],
+    "utilities": [
+      {"type": "electricity", "provider": "FPL", "paymentStatus": "tenant_paid"},
+      {"type": "water", "provider": "Miami Water", "paymentStatus": "included"}
+    ],
+    "leaseType": "residential",
+    "furnitureStatus": "unfurnished",
+    "petPolicy": "cats_and_dogs",
+    "description": "Upscale resort-style condo with resort amenities and ocean views",
+    "createdAt": "2023-10-01",
+    "updatedAt": "2024-01-13"
+  },
+  {
+    "id": "prop-011",
+    "title": "Downtown Office Loft",
+    "type": "office",
+    "status": "active",
+    "rentalStatus": "occupied",
+    "location": {
+      "street": "500 South Flower",
+      "city": "Los Angeles",
+      "state": "CA",
+      "country": "USA",
+      "zipCode": "90071",
+      "latitude": 34.0522,
+      "longitude": -118.2437,
+      "neighborhood": "Downtown LA"
+    },
+    "dimensions": {
+      "totalArea": 2000,
+      "bedrooms": 0,
+      "bathrooms": 1,
+      "floors": 1,
+      "yearBuilt": 2014,
+      "areaUnit": "sqft"
+    },
+    "pricing": {
+      "monthlyRent": 4500,
+      "securityDeposit": 9000,
+      "petDeposit": 0
+    },
+    "features": ["air_conditioning", "heating", "conference_room", "open_floor_plan"],
+    "amenities": ["elevator", "security_system", "parking", "storage"],
+    "utilities": [
+      {"type": "electricity", "provider": "LADWP", "paymentStatus": "included"},
+      {"type": "water", "provider": "LADWP", "paymentStatus": "included"}
+    ],
+    "leaseType": "commercial",
+    "furnitureStatus": "unfurnished",
+    "petPolicy": "no_pets",
+    "description": "Professional office loft in downtown LA with modern setup",
+    "createdAt": "2023-11-15",
+    "updatedAt": "2024-01-04"
+  },
+  {
+    "id": "prop-012",
+    "title": "Arts District Apartment",
+    "type": "apartment",
+    "status": "active",
+    "rentalStatus": "available",
+    "location": {
+      "street": "1200 E 4th Street",
+      "city": "Los Angeles",
+      "state": "CA",
+      "country": "USA",
+      "zipCode": "90013",
+      "latitude": 34.0477,
+      "longitude": -118.2250,
+      "neighborhood": "Arts District"
+    },
+    "dimensions": {
+      "totalArea": 1600,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "floors": 1,
+      "yearBuilt": 2011,
+      "areaUnit": "sqft"
+    },
+    "pricing": {
+      "monthlyRent": 3200,
+      "securityDeposit": 6400,
+      "petDeposit": 800
+    },
+    "features": ["air_conditioning", "heating", "exposed_brick", "high_ceilings"],
+    "amenities": ["elevator", "storage", "fitness_center"],
+    "utilities": [
+      {"type": "electricity", "provider": "LADWP", "paymentStatus": "tenant_paid"},
+      {"type": "water", "provider": "LADWP", "paymentStatus": "included"}
+    ],
+    "leaseType": "residential",
+    "furnitureStatus": "unfurnished",
+    "petPolicy": "cats_only",
+    "description": "Trendy Arts District apartment with industrial charm",
+    "createdAt": "2023-12-01",
+    "updatedAt": "2024-01-03"
+  },
+  {
+    "id": "prop-013",
+    "title": "Silver Lake House",
+    "type": "house",
+    "status": "active",
+    "rentalStatus": "occupied",
+    "location": {
+      "street": "1600 Sunset Boulevard",
+      "city": "Los Angeles",
+      "state": "CA",
+      "country": "USA",
+      "zipCode": "90027",
+      "latitude": 34.0759,
+      "longitude": -118.2569,
+      "neighborhood": "Silver Lake"
+    },
+    "dimensions": {
+      "totalArea": 2500,
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "floors": 2,
+      "yearBuilt": 2001,
+      "lotSize": 0.3,
+      "areaUnit": "sqft"
+    },
+    "pricing": {
+      "monthlyRent": 4000,
+      "securityDeposit": 8000,
+      "petDeposit": 1500
+    },
+    "features": ["air_conditioning", "heating", "garage", "garden", "patio", "views"],
+    "amenities": ["parking", "storage", "backyard"],
+    "utilities": [
+      {"type": "electricity", "provider": "LADWP", "paymentStatus": "tenant_paid"},
+      {"type": "water", "provider": "LADWP", "paymentStatus": "included"},
+      {"type": "gas", "provider": "Southern California Gas", "paymentStatus": "tenant_paid"}
+    ],
+    "leaseType": "residential",
+    "furnitureStatus": "unfurnished",
+    "petPolicy": "all_pets",
+    "description": "Charming Silver Lake home with views and character",
+    "createdAt": "2024-01-02",
+    "updatedAt": "2024-01-02"
+  },
+  {
+    "id": "prop-014",
+    "title": "Mountain Lodge",
+    "type": "house",
+    "status": "maintenance",
+    "rentalStatus": "maintenance",
+    "location": {
+      "street": "2000 Summit Trail",
+      "city": "Denver",
+      "state": "CO",
+      "country": "USA",
+      "zipCode": "80219",
+      "latitude": 39.7392,
+      "longitude": -104.9903,
+      "neighborhood": "Foothills"
+    },
+    "dimensions": {
+      "totalArea": 4000,
+      "bedrooms": 6,
+      "bathrooms": 4,
+      "floors": 2,
+      "yearBuilt": 1998,
+      "lotSize": 0.5,
+      "areaUnit": "sqft"
+    },
+    "pricing": {
+      "monthlyRent": 6000,
+      "securityDeposit": 12000,
+      "petDeposit": 2000
+    },
+    "features": ["heating", "fireplace", "deck", "views"],
+    "amenities": ["storage", "garage"],
+    "utilities": [
+      {"type": "electricity", "provider": "Xcel Energy", "paymentStatus": "tenant_paid"},
+      {"type": "water", "provider": "Boulder Water", "paymentStatus": "included"},
+      {"type": "gas", "provider": "Xcel Energy", "paymentStatus": "tenant_paid"}
+    ],
+    "leaseType": "residential",
+    "furnitureStatus": "unfurnished",
+    "petPolicy": "all_pets",
+    "description": "Large mountain lodge under maintenance, spectacular views",
+    "createdAt": "2023-06-01",
+    "updatedAt": "2024-01-15"
+  },
+  {
+    "id": "prop-015",
+    "title": "Ski Resort Cabin",
+    "type": "villa",
+    "status": "active",
+    "rentalStatus": "available",
+    "location": {
+      "street": "2200 Powder Peak",
+      "city": "Denver",
+      "state": "CO",
+      "country": "USA",
+      "zipCode": "80220",
+      "latitude": 39.7450,
+      "longitude": -105.0000,
+      "neighborhood": "Mountain Resort"
+    },
+    "dimensions": {
+      "totalArea": 3200,
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "floors": 2,
+      "yearBuilt": 2007,
+      "lotSize": 0.4,
+      "areaUnit": "sqft"
+    },
+    "pricing": {
+      "monthlyRent": 5500,
+      "securityDeposit": 11000,
+      "petDeposit": 1500
+    },
+    "features": ["heating", "fireplace", "hot_tub", "deck", "views", "ski_access"],
+    "amenities": ["garage", "storage"],
+    "utilities": [
+      {"type": "electricity", "provider": "Xcel Energy", "paymentStatus": "tenant_paid"},
+      {"type": "water", "provider": "Mountain Water", "paymentStatus": "included"},
+      {"type": "heating", "provider": "Propane", "paymentStatus": "tenant_paid"}
+    ],
+    "leaseType": "vacation",
+    "furnitureStatus": "semi_furnished",
+    "petPolicy": "cats_and_dogs",
+    "description": "Premium ski resort cabin with all amenities and direct ski access",
+    "createdAt": "2023-11-01",
+    "updatedAt": "2024-01-01"
+  },
+  {
+    "id": "prop-016",
+    "title": "Beach Cottage",
+    "type": "house",
+    "status": "active",
+    "rentalStatus": "occupied",
+    "location": {
+      "street": "1300 Beach Street",
+      "city": "Miami",
+      "state": "FL",
+      "country": "USA",
+      "zipCode": "33141",
+      "latitude": 25.7950,
+      "longitude": -80.1300,
+      "neighborhood": "Miami Beach"
+    },
+    "dimensions": {
+      "totalArea": 2000,
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "floors": 1,
+      "yearBuilt": 1985,
+      "lotSize": 0.2,
+      "areaUnit": "sqft"
+    },
+    "pricing": {
+      "monthlyRent": 4500,
+      "securityDeposit": 9000,
+      "petDeposit": 1500
+    },
+    "features": ["air_conditioning", "heating", "deck", "beach_access", "patio"],
+    "amenities": ["parking", "storage"],
+    "utilities": [
+      {"type": "electricity", "provider": "FPL", "paymentStatus": "tenant_paid"},
+      {"type": "water", "provider": "Miami Water", "paymentStatus": "included"}
+    ],
+    "leaseType": "residential",
+    "furnitureStatus": "unfurnished",
+    "petPolicy": "all_pets",
+    "description": "Charming beach cottage with direct beach access",
+    "createdAt": "2023-12-10",
+    "updatedAt": "2024-01-11"
+  },
+  {
+    "id": "prop-017",
+    "title": "Garden Apartment",
+    "type": "apartment",
+    "status": "active",
+    "rentalStatus": "available",
+    "location": {
+      "street": "400 Birch Lane",
+      "city": "Chicago",
+      "state": "IL",
+      "country": "USA",
+      "zipCode": "60304",
+      "latitude": 41.8100,
+      "longitude": -87.7450,
+      "neighborhood": "Westchester"
+    },
+    "dimensions": {
+      "totalArea": 1400,
+      "bedrooms": 2,
+      "bathrooms": 1.5,
+      "floors": 1,
+      "yearBuilt": 2009,
+      "areaUnit": "sqft"
+    },
+    "pricing": {
+      "monthlyRent": 2200,
+      "securityDeposit": 4400,
+      "petDeposit": 600
+    },
+    "features": ["air_conditioning", "heating", "washer_dryer", "patio"],
+    "amenities": ["elevator", "storage", "garden"],
+    "utilities": [
+      {"type": "electricity", "provider": "ComEd", "paymentStatus": "tenant_paid"},
+      {"type": "water", "provider": "City Water", "paymentStatus": "included"}
+    ],
+    "leaseType": "residential",
+    "furnitureStatus": "unfurnished",
+    "petPolicy": "dogs_only",
+    "description": "Spacious garden apartment with patio and nature surroundings",
+    "createdAt": "2023-12-20",
+    "updatedAt": "2024-01-09"
+  },
+  {
+    "id": "prop-018",
+    "title": "Upper East Side Penthouse",
+    "type": "apartment",
+    "status": "active",
+    "rentalStatus": "available",
+    "location": {
+      "street": "700 Park Avenue",
+      "city": "New York",
+      "state": "NY",
+      "country": "USA",
+      "zipCode": "10065",
+      "latitude": 40.7764,
+      "longitude": -73.9607,
+      "neighborhood": "Upper East Side"
+    },
+    "dimensions": {
+      "totalArea": 3500,
+      "bedrooms": 5,
+      "bathrooms": 4,
+      "floors": 1,
+      "yearBuilt": 2018,
+      "areaUnit": "sqft"
+    },
+    "pricing": {
+      "monthlyRent": 10000,
+      "securityDeposit": 20000,
+      "petDeposit": 5000
+    },
+    "features": ["air_conditioning", "heating", "dishwasher", "washer_dryer", "terraces", "high_ceilings"],
+    "amenities": ["elevator", "security_system", "doorman", "gym", "spa", "storage"],
+    "utilities": [
+      {"type": "electricity", "provider": "Con Edison", "paymentStatus": "included"},
+      {"type": "water", "provider": "NYC Water", "paymentStatus": "included"},
+      {"type": "heating", "provider": "Con Edison", "paymentStatus": "included"}
+    ],
+    "leaseType": "residential",
+    "furnitureStatus": "unfurnished",
+    "petPolicy": "cats_and_dogs",
+    "description": "Ultra-luxury penthouse with Central Park views and premium amenities",
+    "createdAt": "2024-01-01",
+    "updatedAt": "2024-01-01"
+  },
+  {
+    "id": "prop-019",
+    "title": "West Hollywood Villa",
+    "type": "villa",
+    "status": "active",
+    "rentalStatus": "occupied",
+    "location": {
+      "street": "1800 Laurel Canyon",
+      "city": "Los Angeles",
+      "state": "CA",
+      "country": "USA",
+      "zipCode": "90046",
+      "latitude": 34.0890,
+      "longitude": -118.3650,
+      "neighborhood": "West Hollywood"
+    },
+    "dimensions": {
+      "totalArea": 3800,
+      "bedrooms": 4,
+      "bathrooms": 3.5,
+      "floors": 2,
+      "yearBuilt": 2006,
+      "lotSize": 0.35,
+      "areaUnit": "sqft"
+    },
+    "pricing": {
+      "monthlyRent": 7500,
+      "securityDeposit": 15000,
+      "petDeposit": 2500
+    },
+    "features": ["air_conditioning", "heating", "pool", "hot_tub", "gym", "home_theater"],
+    "amenities": ["garage", "storage", "landscaping"],
+    "utilities": [
+      {"type": "electricity", "provider": "LADWP", "paymentStatus": "tenant_paid"},
+      {"type": "water", "provider": "LADWP", "paymentStatus": "included"},
+      {"type": "pool_maintenance", "provider": "Pool Service", "paymentStatus": "included"}
+    ],
+    "leaseType": "residential",
+    "furnitureStatus": "semi_furnished",
+    "petPolicy": "all_pets",
+    "description": "Luxurious West Hollywood villa with pool, gym, and home theater",
+    "createdAt": "2024-01-05",
+    "updatedAt": "2024-01-05"
+  },
+  {
+    "id": "prop-020",
+    "title": "Boulder Creek Estate",
+    "type": "house",
+    "status": "active",
+    "rentalStatus": "available",
+    "location": {
+      "street": "2300 Creek Road",
+      "city": "Denver",
+      "state": "CO",
+      "country": "USA",
+      "zipCode": "80302",
+      "latitude": 40.0150,
+      "longitude": -105.2705,
+      "neighborhood": "Boulder"
+    },
+    "dimensions": {
+      "totalArea": 4500,
+      "bedrooms": 5,
+      "bathrooms": 4,
+      "floors": 2,
+      "yearBuilt": 2003,
+      "lotSize": 0.6,
+      "areaUnit": "sqft"
+    },
+    "pricing": {
+      "monthlyRent": 7000,
+      "securityDeposit": 14000,
+      "petDeposit": 2000
+    },
+    "features": ["heating", "fireplace", "creek_access", "deck", "views", "privacy"],
+    "amenities": ["garage", "storage", "landscaping"],
+    "utilities": [
+      {"type": "electricity", "provider": "Xcel Energy", "paymentStatus": "tenant_paid"},
+      {"type": "water", "provider": "Boulder Water", "paymentStatus": "included"},
+      {"type": "gas", "provider": "Xcel Energy", "paymentStatus": "tenant_paid"}
+    ],
+    "leaseType": "residential",
+    "furnitureStatus": "unfurnished",
+    "petPolicy": "all_pets",
+    "description": "Spacious Boulder estate with creek access and mountain views",
+    "createdAt": "2024-01-08",
+    "updatedAt": "2024-01-08"
+  }
+]

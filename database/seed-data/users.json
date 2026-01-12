@@ -1,0 +1,1155 @@
+[
+  {
+    "id": "user-001",
+    "email": "admin@stayspot.com",
+    "username": "system_admin",
+    "firstName": "Admin",
+    "lastName": "User",
+    "phone": "+1-555-0001",
+    "role": "system_admin",
+    "status": "active",
+    "avatar": "https://api.example.com/avatars/admin.jpg",
+    "address": {
+      "street": "100 Admin Lane",
+      "city": "New York",
+      "state": "NY",
+      "country": "USA",
+      "zipCode": "10001"
+    },
+    "timezone": "America/New_York",
+    "language": "en",
+    "profile": {
+      "bio": "System Administrator",
+      "phone": "+1-555-0001",
+      "website": "https://example.com",
+      "socialLinks": {
+        "linkedin": "https://linkedin.com/in/admin",
+        "twitter": "https://twitter.com/admin"
+      }
+    },
+    "preferences": {
+      "emailNotifications": true,
+      "smsNotifications": false,
+      "pushNotifications": true,
+      "marketingEmails": false,
+      "frequencyPreference": "daily"
+    },
+    "settings": {
+      "theme": "dark",
+      "language": "en",
+      "timezone": "America/New_York",
+      "compactView": false,
+      "dashboardLayout": "grid"
+    },
+    "emailVerified": true,
+    "phoneVerified": true,
+    "twoFactorEnabled": true,
+    "lastLogin": "2024-01-15T10:30:00Z",
+    "createdAt": "2023-01-01",
+    "updatedAt": "2024-01-15"
+  },
+  {
+    "id": "user-002",
+    "email": "company.admin@urbanprops.com",
+    "username": "urban_admin",
+    "firstName": "Robert",
+    "lastName": "Johnson",
+    "phone": "+1-555-0002",
+    "role": "company_admin",
+    "status": "active",
+    "avatar": "https://api.example.com/avatars/robert.jpg",
+    "address": {
+      "street": "200 Park Avenue",
+      "city": "New York",
+      "state": "NY",
+      "country": "USA",
+      "zipCode": "10001"
+    },
+    "timezone": "America/New_York",
+    "language": "en",
+    "profile": {
+      "bio": "Company Administrator - Urban Properties Management",
+      "phone": "+1-555-0002",
+      "website": "https://urbanprops.com",
+      "socialLinks": {}
+    },
+    "preferences": {
+      "emailNotifications": true,
+      "smsNotifications": true,
+      "pushNotifications": true,
+      "marketingEmails": true,
+      "frequencyPreference": "immediate"
+    },
+    "settings": {
+      "theme": "light",
+      "language": "en",
+      "timezone": "America/New_York",
+      "compactView": true,
+      "dashboardLayout": "list"
+    },
+    "emailVerified": true,
+    "phoneVerified": true,
+    "twoFactorEnabled": false,
+    "lastLogin": "2024-01-15T09:15:00Z",
+    "createdAt": "2023-01-10",
+    "updatedAt": "2024-01-15"
+  },
+  {
+    "id": "user-003",
+    "email": "manager@urbanprops.com",
+    "username": "property_manager_1",
+    "firstName": "Sarah",
+    "lastName": "Williams",
+    "phone": "+1-555-0003",
+    "role": "property_manager",
+    "status": "active",
+    "avatar": "https://api.example.com/avatars/sarah.jpg",
+    "address": {
+      "street": "300 Central Park West",
+      "city": "New York",
+      "state": "NY",
+      "country": "USA",
+      "zipCode": "10023"
+    },
+    "timezone": "America/New_York",
+    "language": "en",
+    "profile": {
+      "bio": "Senior Property Manager",
+      "phone": "+1-555-0003",
+      "website": "https://urbanprops.com",
+      "socialLinks": {}
+    },
+    "preferences": {
+      "emailNotifications": true,
+      "smsNotifications": true,
+      "pushNotifications": true,
+      "marketingEmails": false,
+      "frequencyPreference": "immediate"
+    },
+    "settings": {
+      "theme": "light",
+      "language": "en",
+      "timezone": "America/New_York",
+      "compactView": false,
+      "dashboardLayout": "grid"
+    },
+    "emailVerified": true,
+    "phoneVerified": true,
+    "twoFactorEnabled": false,
+    "lastLogin": "2024-01-14T14:45:00Z",
+    "createdAt": "2023-02-15",
+    "updatedAt": "2024-01-14"
+  },
+  {
+    "id": "user-004",
+    "email": "landlord@example.com",
+    "username": "john_landlord",
+    "firstName": "John",
+    "lastName": "Smith",
+    "phone": "+1-555-0004",
+    "role": "landlord",
+    "status": "active",
+    "avatar": "https://api.example.com/avatars/john.jpg",
+    "address": {
+      "street": "400 5th Avenue",
+      "city": "New York",
+      "state": "NY",
+      "country": "USA",
+      "zipCode": "10110"
+    },
+    "timezone": "America/New_York",
+    "language": "en",
+    "profile": {
+      "bio": "Independent Property Owner",
+      "phone": "+1-555-0004",
+      "website": "",
+      "socialLinks": {}
+    },
+    "preferences": {
+      "emailNotifications": true,
+      "smsNotifications": true,
+      "pushNotifications": false,
+      "marketingEmails": true,
+      "frequencyPreference": "daily"
+    },
+    "settings": {
+      "theme": "light",
+      "language": "en",
+      "timezone": "America/New_York",
+      "compactView": false,
+      "dashboardLayout": "grid"
+    },
+    "emailVerified": true,
+    "phoneVerified": false,
+    "twoFactorEnabled": false,
+    "lastLogin": "2024-01-13T11:20:00Z",
+    "createdAt": "2023-03-01",
+    "updatedAt": "2024-01-13"
+  },
+  {
+    "id": "user-005",
+    "email": "tenant@example.com",
+    "username": "alice_tenant",
+    "firstName": "Alice",
+    "lastName": "Brown",
+    "phone": "+1-555-0005",
+    "role": "tenant",
+    "status": "active",
+    "avatar": "https://api.example.com/avatars/alice.jpg",
+    "address": {
+      "street": "500 Central Park West",
+      "city": "New York",
+      "state": "NY",
+      "country": "USA",
+      "zipCode": "10023"
+    },
+    "timezone": "America/New_York",
+    "language": "en",
+    "profile": {
+      "bio": "Apartment Tenant",
+      "phone": "+1-555-0005",
+      "website": "",
+      "socialLinks": {}
+    },
+    "preferences": {
+      "emailNotifications": true,
+      "smsNotifications": false,
+      "pushNotifications": true,
+      "marketingEmails": false,
+      "frequencyPreference": "weekly"
+    },
+    "settings": {
+      "theme": "light",
+      "language": "en",
+      "timezone": "America/New_York",
+      "compactView": true,
+      "dashboardLayout": "list"
+    },
+    "emailVerified": true,
+    "phoneVerified": true,
+    "twoFactorEnabled": false,
+    "lastLogin": "2024-01-15T08:00:00Z",
+    "createdAt": "2023-04-15",
+    "updatedAt": "2024-01-15"
+  },
+  {
+    "id": "user-006",
+    "email": "maintenance@urbanprops.com",
+    "username": "maintenance_team",
+    "firstName": "Mike",
+    "lastName": "Davis",
+    "phone": "+1-555-0006",
+    "role": "maintenance_staff",
+    "status": "active",
+    "avatar": "https://api.example.com/avatars/mike.jpg",
+    "address": {
+      "street": "600 10th Avenue",
+      "city": "New York",
+      "state": "NY",
+      "country": "USA",
+      "zipCode": "10011"
+    },
+    "timezone": "America/New_York",
+    "language": "en",
+    "profile": {
+      "bio": "Maintenance Technician",
+      "phone": "+1-555-0006",
+      "website": "",
+      "socialLinks": {}
+    },
+    "preferences": {
+      "emailNotifications": true,
+      "smsNotifications": true,
+      "pushNotifications": true,
+      "marketingEmails": false,
+      "frequencyPreference": "immediate"
+    },
+    "settings": {
+      "theme": "light",
+      "language": "en",
+      "timezone": "America/New_York",
+      "compactView": false,
+      "dashboardLayout": "grid"
+    },
+    "emailVerified": true,
+    "phoneVerified": true,
+    "twoFactorEnabled": false,
+    "lastLogin": "2024-01-14T16:30:00Z",
+    "createdAt": "2023-05-20",
+    "updatedAt": "2024-01-14"
+  },
+  {
+    "id": "user-007",
+    "email": "vendor@contractors.com",
+    "username": "contractor_vendor",
+    "firstName": "David",
+    "lastName": "Martinez",
+    "phone": "+1-555-0007",
+    "role": "vendor",
+    "status": "active",
+    "avatar": "https://api.example.com/avatars/david.jpg",
+    "address": {
+      "street": "700 Madison Avenue",
+      "city": "New York",
+      "state": "NY",
+      "country": "USA",
+      "zipCode": "10065"
+    },
+    "timezone": "America/New_York",
+    "language": "en",
+    "profile": {
+      "bio": "General Contractor",
+      "phone": "+1-555-0007",
+      "website": "https://contractors.com",
+      "socialLinks": {}
+    },
+    "preferences": {
+      "emailNotifications": true,
+      "smsNotifications": true,
+      "pushNotifications": true,
+      "marketingEmails": true,
+      "frequencyPreference": "daily"
+    },
+    "settings": {
+      "theme": "light",
+      "language": "en",
+      "timezone": "America/New_York",
+      "compactView": false,
+      "dashboardLayout": "grid"
+    },
+    "emailVerified": true,
+    "phoneVerified": true,
+    "twoFactorEnabled": false,
+    "lastLogin": "2024-01-12T10:00:00Z",
+    "createdAt": "2023-06-10",
+    "updatedAt": "2024-01-12"
+  },
+  {
+    "id": "user-008",
+    "email": "inspector@qualitycheck.com",
+    "username": "property_inspector",
+    "firstName": "Emma",
+    "lastName": "Taylor",
+    "phone": "+1-555-0008",
+    "role": "inspector",
+    "status": "active",
+    "avatar": "https://api.example.com/avatars/emma.jpg",
+    "address": {
+      "street": "800 Park Avenue",
+      "city": "New York",
+      "state": "NY",
+      "country": "USA",
+      "zipCode": "10065"
+    },
+    "timezone": "America/New_York",
+    "language": "en",
+    "profile": {
+      "bio": "Certified Property Inspector",
+      "phone": "+1-555-0008",
+      "website": "https://qualitycheck.com",
+      "socialLinks": {}
+    },
+    "preferences": {
+      "emailNotifications": true,
+      "smsNotifications": true,
+      "pushNotifications": true,
+      "marketingEmails": false,
+      "frequencyPreference": "daily"
+    },
+    "settings": {
+      "theme": "light",
+      "language": "en",
+      "timezone": "America/New_York",
+      "compactView": false,
+      "dashboardLayout": "grid"
+    },
+    "emailVerified": true,
+    "phoneVerified": true,
+    "twoFactorEnabled": false,
+    "lastLogin": "2024-01-13T13:45:00Z",
+    "createdAt": "2023-07-05",
+    "updatedAt": "2024-01-13"
+  },
+  {
+    "id": "user-009",
+    "email": "finance@urbanprops.com",
+    "username": "finance_officer",
+    "firstName": "James",
+    "lastName": "Wilson",
+    "phone": "+1-555-0009",
+    "role": "finance_officer",
+    "status": "active",
+    "avatar": "https://api.example.com/avatars/james.jpg",
+    "address": {
+      "street": "900 Madison Avenue",
+      "city": "New York",
+      "state": "NY",
+      "country": "USA",
+      "zipCode": "10065"
+    },
+    "timezone": "America/New_York",
+    "language": "en",
+    "profile": {
+      "bio": "Financial Manager",
+      "phone": "+1-555-0009",
+      "website": "",
+      "socialLinks": {}
+    },
+    "preferences": {
+      "emailNotifications": true,
+      "smsNotifications": true,
+      "pushNotifications": false,
+      "marketingEmails": false,
+      "frequencyPreference": "daily"
+    },
+    "settings": {
+      "theme": "dark",
+      "language": "en",
+      "timezone": "America/New_York",
+      "compactView": true,
+      "dashboardLayout": "list"
+    },
+    "emailVerified": true,
+    "phoneVerified": true,
+    "twoFactorEnabled": true,
+    "lastLogin": "2024-01-14T09:00:00Z",
+    "createdAt": "2023-08-01",
+    "updatedAt": "2024-01-14"
+  },
+  {
+    "id": "user-010",
+    "email": "tenant2@example.com",
+    "username": "bob_tenant",
+    "firstName": "Bob",
+    "lastName": "Garcia",
+    "phone": "+1-555-0010",
+    "role": "tenant",
+    "status": "active",
+    "avatar": "https://api.example.com/avatars/bob.jpg",
+    "address": {
+      "street": "1000 5th Avenue",
+      "city": "New York",
+      "state": "NY",
+      "country": "USA",
+      "zipCode": "10110"
+    },
+    "timezone": "America/New_York",
+    "language": "en",
+    "profile": {
+      "bio": "Studio Tenant",
+      "phone": "+1-555-0010",
+      "website": "",
+      "socialLinks": {}
+    },
+    "preferences": {
+      "emailNotifications": false,
+      "smsNotifications": true,
+      "pushNotifications": true,
+      "marketingEmails": false,
+      "frequencyPreference": "weekly"
+    },
+    "settings": {
+      "theme": "light",
+      "language": "en",
+      "timezone": "America/New_York",
+      "compactView": false,
+      "dashboardLayout": "grid"
+    },
+    "emailVerified": true,
+    "phoneVerified": false,
+    "twoFactorEnabled": false,
+    "lastLogin": "2024-01-10T15:20:00Z",
+    "createdAt": "2023-09-10",
+    "updatedAt": "2024-01-10"
+  },
+  {
+    "id": "user-011",
+    "email": "chicago.admin@suburbanrentals.com",
+    "username": "chicago_admin",
+    "firstName": "Patricia",
+    "lastName": "Anderson",
+    "phone": "+1-555-0011",
+    "role": "company_admin",
+    "status": "active",
+    "avatar": "https://api.example.com/avatars/patricia.jpg",
+    "address": {
+      "street": "100 N Wacker Drive",
+      "city": "Chicago",
+      "state": "IL",
+      "country": "USA",
+      "zipCode": "60601"
+    },
+    "timezone": "America/Chicago",
+    "language": "en",
+    "profile": {
+      "bio": "Company Administrator - Suburban Rentals",
+      "phone": "+1-555-0011",
+      "website": "https://suburbanrentals.com",
+      "socialLinks": {}
+    },
+    "preferences": {
+      "emailNotifications": true,
+      "smsNotifications": true,
+      "pushNotifications": true,
+      "marketingEmails": true,
+      "frequencyPreference": "immediate"
+    },
+    "settings": {
+      "theme": "light",
+      "language": "en",
+      "timezone": "America/Chicago",
+      "compactView": false,
+      "dashboardLayout": "grid"
+    },
+    "emailVerified": true,
+    "phoneVerified": true,
+    "twoFactorEnabled": false,
+    "lastLogin": "2024-01-15T08:30:00Z",
+    "createdAt": "2023-10-01",
+    "updatedAt": "2024-01-15"
+  },
+  {
+    "id": "user-012",
+    "email": "manager@suburbanrentals.com",
+    "username": "chicago_manager",
+    "firstName": "Christopher",
+    "lastName": "Thomas",
+    "phone": "+1-555-0012",
+    "role": "property_manager",
+    "status": "active",
+    "avatar": "https://api.example.com/avatars/christopher.jpg",
+    "address": {
+      "street": "200 Elm Street",
+      "city": "Chicago",
+      "state": "IL",
+      "country": "USA",
+      "zipCode": "60302"
+    },
+    "timezone": "America/Chicago",
+    "language": "en",
+    "profile": {
+      "bio": "Property Manager - Suburban Division",
+      "phone": "+1-555-0012",
+      "website": "",
+      "socialLinks": {}
+    },
+    "preferences": {
+      "emailNotifications": true,
+      "smsNotifications": true,
+      "pushNotifications": true,
+      "marketingEmails": false,
+      "frequencyPreference": "immediate"
+    },
+    "settings": {
+      "theme": "light",
+      "language": "en",
+      "timezone": "America/Chicago",
+      "compactView": false,
+      "dashboardLayout": "grid"
+    },
+    "emailVerified": true,
+    "phoneVerified": true,
+    "twoFactorEnabled": false,
+    "lastLogin": "2024-01-14T10:15:00Z",
+    "createdAt": "2023-10-15",
+    "updatedAt": "2024-01-14"
+  },
+  {
+    "id": "user-013",
+    "email": "miami.admin@coastalhomes.com",
+    "username": "miami_admin",
+    "firstName": "Michelle",
+    "lastName": "Rodriguez",
+    "phone": "+1-555-0013",
+    "role": "company_admin",
+    "status": "active",
+    "avatar": "https://api.example.com/avatars/michelle.jpg",
+    "address": {
+      "street": "1000 Ocean Drive",
+      "city": "Miami",
+      "state": "FL",
+      "country": "USA",
+      "zipCode": "33139"
+    },
+    "timezone": "America/New_York",
+    "language": "es",
+    "profile": {
+      "bio": "Company Administrator - Coastal Homes",
+      "phone": "+1-555-0013",
+      "website": "https://coastalhomes.com",
+      "socialLinks": {}
+    },
+    "preferences": {
+      "emailNotifications": true,
+      "smsNotifications": true,
+      "pushNotifications": true,
+      "marketingEmails": true,
+      "frequencyPreference": "daily"
+    },
+    "settings": {
+      "theme": "light",
+      "language": "es",
+      "timezone": "America/New_York",
+      "compactView": false,
+      "dashboardLayout": "grid"
+    },
+    "emailVerified": true,
+    "phoneVerified": true,
+    "twoFactorEnabled": false,
+    "lastLogin": "2024-01-15T11:00:00Z",
+    "createdAt": "2023-11-01",
+    "updatedAt": "2024-01-15"
+  },
+  {
+    "id": "user-014",
+    "email": "tenant3@example.com",
+    "username": "charlie_tenant",
+    "firstName": "Charles",
+    "lastName": "Taylor",
+    "phone": "+1-555-0014",
+    "role": "tenant",
+    "status": "active",
+    "avatar": "https://api.example.com/avatars/charles.jpg",
+    "address": {
+      "street": "1100 Collins Avenue",
+      "city": "Miami",
+      "state": "FL",
+      "country": "USA",
+      "zipCode": "33140"
+    },
+    "timezone": "America/New_York",
+    "language": "en",
+    "profile": {
+      "bio": "Beach Condo Tenant",
+      "phone": "+1-555-0014",
+      "website": "",
+      "socialLinks": {}
+    },
+    "preferences": {
+      "emailNotifications": true,
+      "smsNotifications": false,
+      "pushNotifications": true,
+      "marketingEmails": false,
+      "frequencyPreference": "weekly"
+    },
+    "settings": {
+      "theme": "light",
+      "language": "en",
+      "timezone": "America/New_York",
+      "compactView": false,
+      "dashboardLayout": "grid"
+    },
+    "emailVerified": true,
+    "phoneVerified": true,
+    "twoFactorEnabled": false,
+    "lastLogin": "2024-01-12T14:00:00Z",
+    "createdAt": "2023-11-15",
+    "updatedAt": "2024-01-12"
+  },
+  {
+    "id": "user-015",
+    "email": "la.admin@downtowndevelopment.com",
+    "username": "la_admin",
+    "firstName": "Daniel",
+    "lastName": "Anderson",
+    "phone": "+1-555-0015",
+    "role": "company_admin",
+    "status": "active",
+    "avatar": "https://api.example.com/avatars/daniel.jpg",
+    "address": {
+      "street": "500 South Flower",
+      "city": "Los Angeles",
+      "state": "CA",
+      "country": "USA",
+      "zipCode": "90071"
+    },
+    "timezone": "America/Los_Angeles",
+    "language": "en",
+    "profile": {
+      "bio": "Company Administrator - Downtown Development",
+      "phone": "+1-555-0015",
+      "website": "https://downtowndevelopment.com",
+      "socialLinks": {}
+    },
+    "preferences": {
+      "emailNotifications": true,
+      "smsNotifications": true,
+      "pushNotifications": true,
+      "marketingEmails": true,
+      "frequencyPreference": "immediate"
+    },
+    "settings": {
+      "theme": "light",
+      "language": "en",
+      "timezone": "America/Los_Angeles",
+      "compactView": false,
+      "dashboardLayout": "grid"
+    },
+    "emailVerified": true,
+    "phoneVerified": true,
+    "twoFactorEnabled": false,
+    "lastLogin": "2024-01-15T07:45:00Z",
+    "createdAt": "2023-12-01",
+    "updatedAt": "2024-01-15"
+  },
+  {
+    "id": "user-016",
+    "email": "tenant4@example.com",
+    "username": "diana_tenant",
+    "firstName": "Diana",
+    "lastName": "Lee",
+    "phone": "+1-555-0016",
+    "role": "tenant",
+    "status": "active",
+    "avatar": "https://api.example.com/avatars/diana.jpg",
+    "address": {
+      "street": "1200 E 4th Street",
+      "city": "Los Angeles",
+      "state": "CA",
+      "country": "USA",
+      "zipCode": "90013"
+    },
+    "timezone": "America/Los_Angeles",
+    "language": "en",
+    "profile": {
+      "bio": "Arts District Apartment Tenant",
+      "phone": "+1-555-0016",
+      "website": "",
+      "socialLinks": {}
+    },
+    "preferences": {
+      "emailNotifications": true,
+      "smsNotifications": false,
+      "pushNotifications": true,
+      "marketingEmails": false,
+      "frequencyPreference": "weekly"
+    },
+    "settings": {
+      "theme": "light",
+      "language": "en",
+      "timezone": "America/Los_Angeles",
+      "compactView": true,
+      "dashboardLayout": "list"
+    },
+    "emailVerified": true,
+    "phoneVerified": false,
+    "twoFactorEnabled": false,
+    "lastLogin": "2024-01-13T16:30:00Z",
+    "createdAt": "2024-01-01",
+    "updatedAt": "2024-01-13"
+  },
+  {
+    "id": "user-017",
+    "email": "denver.admin@mountainview.com",
+    "username": "denver_admin",
+    "firstName": "Kenneth",
+    "lastName": "White",
+    "phone": "+1-555-0017",
+    "role": "company_admin",
+    "status": "active",
+    "avatar": "https://api.example.com/avatars/kenneth.jpg",
+    "address": {
+      "street": "2000 Summit Trail",
+      "city": "Denver",
+      "state": "CO",
+      "country": "USA",
+      "zipCode": "80219"
+    },
+    "timezone": "America/Denver",
+    "language": "en",
+    "profile": {
+      "bio": "Company Administrator - Mountain View",
+      "phone": "+1-555-0017",
+      "website": "https://mountainview.com",
+      "socialLinks": {}
+    },
+    "preferences": {
+      "emailNotifications": true,
+      "smsNotifications": true,
+      "pushNotifications": true,
+      "marketingEmails": true,
+      "frequencyPreference": "daily"
+    },
+    "settings": {
+      "theme": "light",
+      "language": "en",
+      "timezone": "America/Denver",
+      "compactView": false,
+      "dashboardLayout": "grid"
+    },
+    "emailVerified": true,
+    "phoneVerified": true,
+    "twoFactorEnabled": false,
+    "lastLogin": "2024-01-14T12:00:00Z",
+    "createdAt": "2024-01-02",
+    "updatedAt": "2024-01-14"
+  },
+  {
+    "id": "user-018",
+    "email": "tenant5@example.com",
+    "username": "eve_tenant",
+    "firstName": "Evelyn",
+    "lastName": "Harris",
+    "phone": "+1-555-0018",
+    "role": "tenant",
+    "status": "active",
+    "avatar": "https://api.example.com/avatars/evelyn.jpg",
+    "address": {
+      "street": "2200 Powder Peak",
+      "city": "Denver",
+      "state": "CO",
+      "country": "USA",
+      "zipCode": "80220"
+    },
+    "timezone": "America/Denver",
+    "language": "en",
+    "profile": {
+      "bio": "Ski Resort Cabin Tenant",
+      "phone": "+1-555-0018",
+      "website": "",
+      "socialLinks": {}
+    },
+    "preferences": {
+      "emailNotifications": true,
+      "smsNotifications": true,
+      "pushNotifications": true,
+      "marketingEmails": true,
+      "frequencyPreference": "immediate"
+    },
+    "settings": {
+      "theme": "light",
+      "language": "en",
+      "timezone": "America/Denver",
+      "compactView": false,
+      "dashboardLayout": "grid"
+    },
+    "emailVerified": true,
+    "phoneVerified": true,
+    "twoFactorEnabled": false,
+    "lastLogin": "2024-01-11T09:30:00Z",
+    "createdAt": "2024-01-03",
+    "updatedAt": "2024-01-11"
+  },
+  {
+    "id": "user-019",
+    "email": "support@stayspot.com",
+    "username": "support_staff",
+    "firstName": "Lisa",
+    "lastName": "Martin",
+    "phone": "+1-555-0019",
+    "role": "support_staff",
+    "status": "active",
+    "avatar": "https://api.example.com/avatars/lisa.jpg",
+    "address": {
+      "street": "100 Support Lane",
+      "city": "New York",
+      "state": "NY",
+      "country": "USA",
+      "zipCode": "10001"
+    },
+    "timezone": "America/New_York",
+    "language": "en",
+    "profile": {
+      "bio": "Customer Support Specialist",
+      "phone": "+1-555-0019",
+      "website": "",
+      "socialLinks": {}
+    },
+    "preferences": {
+      "emailNotifications": true,
+      "smsNotifications": true,
+      "pushNotifications": true,
+      "marketingEmails": false,
+      "frequencyPreference": "immediate"
+    },
+    "settings": {
+      "theme": "light",
+      "language": "en",
+      "timezone": "America/New_York",
+      "compactView": false,
+      "dashboardLayout": "grid"
+    },
+    "emailVerified": true,
+    "phoneVerified": true,
+    "twoFactorEnabled": false,
+    "lastLogin": "2024-01-15T09:00:00Z",
+    "createdAt": "2024-01-04",
+    "updatedAt": "2024-01-15"
+  },
+  {
+    "id": "user-020",
+    "email": "accounting@urbanprops.com",
+    "username": "accountant_1",
+    "firstName": "Mark",
+    "lastName": "Jackson",
+    "phone": "+1-555-0020",
+    "role": "accountant",
+    "status": "active",
+    "avatar": "https://api.example.com/avatars/mark.jpg",
+    "address": {
+      "street": "200 Park Avenue",
+      "city": "New York",
+      "state": "NY",
+      "country": "USA",
+      "zipCode": "10001"
+    },
+    "timezone": "America/New_York",
+    "language": "en",
+    "profile": {
+      "bio": "Accounting Specialist",
+      "phone": "+1-555-0020",
+      "website": "",
+      "socialLinks": {}
+    },
+    "preferences": {
+      "emailNotifications": true,
+      "smsNotifications": true,
+      "pushNotifications": false,
+      "marketingEmails": false,
+      "frequencyPreference": "daily"
+    },
+    "settings": {
+      "theme": "dark",
+      "language": "en",
+      "timezone": "America/New_York",
+      "compactView": true,
+      "dashboardLayout": "list"
+    },
+    "emailVerified": true,
+    "phoneVerified": true,
+    "twoFactorEnabled": false,
+    "lastLogin": "2024-01-14T08:00:00Z",
+    "createdAt": "2024-01-05",
+    "updatedAt": "2024-01-14"
+  },
+  {
+    "id": "user-021",
+    "email": "tenant6@example.com",
+    "username": "frank_tenant",
+    "firstName": "Frank",
+    "lastName": "White",
+    "phone": "+1-555-0021",
+    "role": "tenant",
+    "status": "inactive",
+    "avatar": "https://api.example.com/avatars/frank.jpg",
+    "address": {
+      "street": "300 Maple Avenue",
+      "city": "Chicago",
+      "state": "IL",
+      "country": "USA",
+      "zipCode": "60303"
+    },
+    "timezone": "America/Chicago",
+    "language": "en",
+    "profile": {
+      "bio": "Former Tenant",
+      "phone": "+1-555-0021",
+      "website": "",
+      "socialLinks": {}
+    },
+    "preferences": {
+      "emailNotifications": false,
+      "smsNotifications": false,
+      "pushNotifications": false,
+      "marketingEmails": false,
+      "frequencyPreference": "weekly"
+    },
+    "settings": {
+      "theme": "light",
+      "language": "en",
+      "timezone": "America/Chicago",
+      "compactView": false,
+      "dashboardLayout": "grid"
+    },
+    "emailVerified": false,
+    "phoneVerified": false,
+    "twoFactorEnabled": false,
+    "lastLogin": "2023-12-01T14:00:00Z",
+    "createdAt": "2024-01-06",
+    "updatedAt": "2024-01-06"
+  },
+  {
+    "id": "user-022",
+    "email": "supervisor@urbanprops.com",
+    "username": "operations_supervisor",
+    "firstName": "Nancy",
+    "lastName": "Jones",
+    "phone": "+1-555-0022",
+    "role": "operations_supervisor",
+    "status": "active",
+    "avatar": "https://api.example.com/avatars/nancy.jpg",
+    "address": {
+      "street": "200 Park Avenue",
+      "city": "New York",
+      "state": "NY",
+      "country": "USA",
+      "zipCode": "10001"
+    },
+    "timezone": "America/New_York",
+    "language": "en",
+    "profile": {
+      "bio": "Operations Supervisor",
+      "phone": "+1-555-0022",
+      "website": "",
+      "socialLinks": {}
+    },
+    "preferences": {
+      "emailNotifications": true,
+      "smsNotifications": true,
+      "pushNotifications": true,
+      "marketingEmails": false,
+      "frequencyPreference": "immediate"
+    },
+    "settings": {
+      "theme": "light",
+      "language": "en",
+      "timezone": "America/New_York",
+      "compactView": false,
+      "dashboardLayout": "grid"
+    },
+    "emailVerified": true,
+    "phoneVerified": true,
+    "twoFactorEnabled": false,
+    "lastLogin": "2024-01-15T10:00:00Z",
+    "createdAt": "2024-01-07",
+    "updatedAt": "2024-01-15"
+  },
+  {
+    "id": "user-023",
+    "email": "landlord2@example.com",
+    "username": "james_landlord",
+    "firstName": "James",
+    "lastName": "Lee",
+    "phone": "+1-555-0023",
+    "role": "landlord",
+    "status": "active",
+    "avatar": "https://api.example.com/avatars/james2.jpg",
+    "address": {
+      "street": "1600 Sunset Boulevard",
+      "city": "Los Angeles",
+      "state": "CA",
+      "country": "USA",
+      "zipCode": "90027"
+    },
+    "timezone": "America/Los_Angeles",
+    "language": "en",
+    "profile": {
+      "bio": "Property Owner - Silver Lake",
+      "phone": "+1-555-0023",
+      "website": "",
+      "socialLinks": {}
+    },
+    "preferences": {
+      "emailNotifications": true,
+      "smsNotifications": true,
+      "pushNotifications": true,
+      "marketingEmails": true,
+      "frequencyPreference": "daily"
+    },
+    "settings": {
+      "theme": "light",
+      "language": "en",
+      "timezone": "America/Los_Angeles",
+      "compactView": false,
+      "dashboardLayout": "grid"
+    },
+    "emailVerified": true,
+    "phoneVerified": true,
+    "twoFactorEnabled": false,
+    "lastLogin": "2024-01-13T11:15:00Z",
+    "createdAt": "2024-01-08",
+    "updatedAt": "2024-01-13"
+  },
+  {
+    "id": "user-024",
+    "email": "tenant7@example.com",
+    "username": "grace_tenant",
+    "firstName": "Grace",
+    "lastName": "Davis",
+    "phone": "+1-555-0024",
+    "role": "tenant",
+    "status": "active",
+    "avatar": "https://api.example.com/avatars/grace.jpg",
+    "address": {
+      "street": "1300 Beach Street",
+      "city": "Miami",
+      "state": "FL",
+      "country": "USA",
+      "zipCode": "33141"
+    },
+    "timezone": "America/New_York",
+    "language": "en",
+    "profile": {
+      "bio": "Beach House Tenant",
+      "phone": "+1-555-0024",
+      "website": "",
+      "socialLinks": {}
+    },
+    "preferences": {
+      "emailNotifications": true,
+      "smsNotifications": true,
+      "pushNotifications": true,
+      "marketingEmails": true,
+      "frequencyPreference": "daily"
+    },
+    "settings": {
+      "theme": "light",
+      "language": "en",
+      "timezone": "America/New_York",
+      "compactView": false,
+      "dashboardLayout": "grid"
+    },
+    "emailVerified": true,
+    "phoneVerified": true,
+    "twoFactorEnabled": false,
+    "lastLogin": "2024-01-12T13:45:00Z",
+    "createdAt": "2024-01-09",
+    "updatedAt": "2024-01-12"
+  },
+  {
+    "id": "user-025",
+    "email": "landlord3@example.com",
+    "username": "susan_landlord",
+    "firstName": "Susan",
+    "lastName": "Miller",
+    "phone": "+1-555-0025",
+    "role": "landlord",
+    "status": "active",
+    "avatar": "https://api.example.com/avatars/susan.jpg",
+    "address": {
+      "street": "2300 Creek Road",
+      "city": "Denver",
+      "state": "CO",
+      "country": "USA",
+      "zipCode": "80302"
+    },
+    "timezone": "America/Denver",
+    "language": "en",
+    "profile": {
+      "bio": "Property Owner - Boulder Estate",
+      "phone": "+1-555-0025",
+      "website": "",
+      "socialLinks": {}
+    },
+    "preferences": {
+      "emailNotifications": true,
+      "smsNotifications": false,
+      "pushNotifications": true,
+      "marketingEmails": false,
+      "frequencyPreference": "weekly"
+    },
+    "settings": {
+      "theme": "light",
+      "language": "en",
+      "timezone": "America/Denver",
+      "compactView": false,
+      "dashboardLayout": "grid"
+    },
+    "emailVerified": true,
+    "phoneVerified": true,
+    "twoFactorEnabled": false,
+    "lastLogin": "2024-01-10T10:00:00Z",
+    "createdAt": "2024-01-10",
+    "updatedAt": "2024-01-10"
+  }
+]

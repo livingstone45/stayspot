@@ -1,0 +1,17 @@
+
+> stayspot-frontend@1.0.0 dev
+> vite --host
+
+Port 3000 is in use, trying another one...
+
+  VITE v4.5.14  ready in 438 ms
+
+  ➜  Local:   http://localhost:3001/
+  ➜  Network: http://192.168.1.5:3001/
+12:41:50 AM [vite] hmr update /src/index.css, /src/pages/auth/RegisterTenantPage.jsx
+12:43:46 AM [vite] hmr update /src/index.css, /src/pages/auth/RegisterTenantPage.jsx
+Killed
+npm ERR! Lifecycle script `dev` failed with error: 
+npm ERR! Error: command failed 
+npm ERR!   in workspace: stayspot-frontend@1.0.0 
+npm ERR!   at location: /home/techhatch/Documents/stayspot/frontend 

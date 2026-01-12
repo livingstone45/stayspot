@@ -1,0 +1,66 @@
+# Environment variables - NEVER commit these!
+.env
+.env.local
+.env.production
+.env.production.local
+.env.test
+.env.testing
+.env.development
+.env.*.local
+
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build outputs
+dist/
+build/
+*.tsbuildinfo
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.eslintcache
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Database
+*.sqlite
+*.sqlite3
+*.db
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Testing
+coverage/
+.nyc_output/
+
+# Optional files
+.prettierignore
+.prettierrc
+tsconfig.json.bak
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Secret files
+secrets/
+*.pem
+*.key
+*.crt
