@@ -1,0 +1,27 @@
+name: Deploy Static Site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Create dist directory
+        run: mkdir -p dist && cp index-static.html dist/index.html
+      
+      - name: Upload to Pages
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: dist
+      
+      - name: Deploy
+        uses: actions/deploy-pages@v2
