@@ -56,10 +56,12 @@ const HomePage = () => {
         const data = await response.json();
         setAllProperties(data);
       } else {
-        console.error('Failed to fetch properties');
+        console.error('Failed to fetch properties, using demo data');
+        setAllProperties(defaultProperties);
       }
     } catch (error) {
-      console.error('Error fetching properties:', error);
+      console.error('Error fetching properties, using demo data:', error);
+      setAllProperties(defaultProperties);
     } finally {
       setLoading(false);
     }
