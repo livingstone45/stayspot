@@ -1,0 +1,5 @@
+plugins:
+  - jekyll-redirect-from
+
+include:
+  - 404.html

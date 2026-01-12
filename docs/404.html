@@ -2,19 +2,14 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Page Not Found - Redirecting...</title>
+    <title>Redirecting...</title>
+    <meta http-equiv="refresh" content="0; url=/stayspot/">
     <script type="text/javascript">
-      // This handles the case when a user lands on a non-root route in a SPA
-      // by redirecting them to index.html and preserving the route in sessionStorage
-      var pathSegmentsToKeep = 0;
-      var l = window.location;
-      sessionStorage.redirect = l.pathname + l.search + l.hash;
-      l.replace(
-        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-        '/stayspot/'
-      );
+      // Fallback redirect for browsers that don't support meta refresh
+      window.location = '/stayspot/';
     </script>
   </head>
   <body>
+    Redirecting to home page...
   </body>
 </html>
