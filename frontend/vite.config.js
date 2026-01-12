@@ -86,9 +86,6 @@ export default defineConfig({
       'tailwind-merge',
     ],
   },
-  define: {
-    global: 'globalThis',
-  },
   css: {
     postcss: './postcss.config.js',
   },
