@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import { AuthProvider } from './hooks/useAuth';
+import { AuthProvider } from './hooks/useAuth.js';
 import { ThemeProvider } from './contexts/ThemeContext';
 import AppRouter from './routes';
 import './index.css';
