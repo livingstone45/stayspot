@@ -80,7 +80,8 @@ export const mockAuthService = {
         email: newUser.email,
         firstName: newUser.firstName,
         lastName: newUser.lastName,
-        type: newUser.type
+        type: newUser.type,
+        role: newUser.type  // Add role field for compatibility with getRoleDashboardPath
       }
     };
   },
@@ -120,7 +121,8 @@ export const mockAuthService = {
         email: user.email,
         firstName: user.firstName,
         lastName: user.lastName,
-        type: user.type
+        type: user.type,
+        role: user.type  // Add role field for compatibility with getRoleDashboardPath
       }
     };
   },
