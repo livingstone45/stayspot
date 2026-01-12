@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Eye, EyeOff } from 'lucide-react';
 import { getRoleDashboardPath } from '../../utils/auth/roleRedirection';
+import { mockAuthService } from '../../services/mockAuth';
 
 const LoginPage = () => {
   const [formData, setFormData] = useState({ email: '', password: '', rememberMe: false });
@@ -23,41 +24,19 @@ const LoginPage = () => {
     setLoading(true);
     setError('');
     
-    const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 10000);
-    
     try {
-      const response = await fetch('http://localhost:5000/api/auth/login', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          email: formData.email,
-          password: formData.password,
-          rememberMe: formData.rememberMe
-        }),
-        signal: controller.signal
-      });
-      clearTimeout(timeoutId);
+      const result = await mockAuthService.login(formData.email, formData.password);
       
-      const data = await response.json();
-      if (response.ok && data.data?.user) {
-        localStorage.setItem('token', data.data.tokens?.accessToken || data.data.token);
-        localStorage.setItem('user', JSON.stringify(data.data.user));
+      if (result.success) {
+        localStorage.setItem('authToken', result.token);
+        localStorage.setItem('user', JSON.stringify(result.user));
         setLoading(false);
         
-        const dashboardPath = getRoleDashboardPath(data.data.user);
+        const dashboardPath = getRoleDashboardPath(result.user);
         navigate(dashboardPath);
-      } else {
-        setError(data.error || data.message || 'Login failed');
-        setLoading(false);
       }
     } catch (err) {
-      clearTimeout(timeoutId);
-      if (err.name === 'AbortError') {
-        setError('Request timeout. Please try again.');
-      } else {
-        setError('Network error. Make sure backend is running.');
-      }
+      setError(err.message || 'Login failed');
       setLoading(false);
     }
   };

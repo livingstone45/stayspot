@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { getRoleDashboardPath } from '../../utils/auth/roleRedirection';
+import { mockAuthService } from '../../services/mockAuth';
 
 const RegisterPropertyManagerPage = () => {
   const [step, setStep] = useState(1);
@@ -69,49 +70,22 @@ const RegisterPropertyManagerPage = () => {
       return;
     }
 
-    const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 10000);
-    
     try {
-      const response = await fetch('http://localhost:5000/api/auth/register', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          firstName: formData.firstName,
-          lastName: formData.lastName,
-          email: formData.email,
-          phone: formData.phone,
-          password: formData.password,
-          confirmPassword: formData.confirmPassword,
-          role: 'property_manager',
-          companyName: formData.companyName,
-          license: formData.license,
-          yearsExperience: formData.yearsExperience,
-          propertiesManaged: formData.propertiesManaged,
-          acceptTerms: formData.acceptTerms
-        }),
-        signal: controller.signal
+      const result = await mockAuthService.register({
+        firstName: formData.firstName,
+        lastName: formData.lastName,
+        email: formData.email,
+        phoneNumber: formData.phone,
+        password: formData.password,
+        userType: 'property_manager'
       });
-      clearTimeout(timeoutId);
       
-      const data = await response.json();
-      if (response.ok) {
-        localStorage.setItem('token', data.data?.tokens?.accessToken || data.token);
-        localStorage.setItem('user', JSON.stringify(data.data?.user || { role: 'property_manager' }));
+      if (result.success) {
         setLoading(false);
-        const dashboardPath = getRoleDashboardPath(data.data?.user || { role: 'property_manager' });
-        navigate(dashboardPath);
-      } else {
-        setError(data.error || data.message || 'Registration failed');
-        setLoading(false);
+        navigate('/auth/login', { state: { message: 'Registration successful! Please log in.' } });
       }
     } catch (err) {
-      clearTimeout(timeoutId);
-      if (err.name === 'AbortError') {
-        setError('Request timeout. Please try again.');
-      } else {
-        setError('Network error. Make sure backend is running.');
-      }
+      setError(err.message || 'Registration failed');
       setLoading(false);
     }
   };
