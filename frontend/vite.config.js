@@ -4,7 +4,7 @@ import { resolve } from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/',
+  base: '/stayspot/',
   plugins: [react()],
   define: {
     'import.meta.env.VITE_API_BASE_URL': JSON.stringify('http://localhost:5000/api'),

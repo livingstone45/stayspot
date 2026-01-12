@@ -7,7 +7,7 @@ import './index.css';
 
 const App = () => {
   return (
-    <BrowserRouter basename="/">
+    <BrowserRouter basename="/stayspot/">
       <ThemeProvider>
         <AuthProvider>
           <AppRouter />
