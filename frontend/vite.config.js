@@ -4,10 +4,10 @@ import { resolve } from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/stayspot/',
+  base: '/',
   plugins: [react()],
   define: {
-    'import.meta.env.VITE_API_BASE_URL': JSON.stringify('https://api.stayspot.co.ke/api'),
+    'import.meta.env.VITE_API_BASE_URL': JSON.stringify('http://localhost:5000/api'),
   },
   resolve: {
     alias: {
