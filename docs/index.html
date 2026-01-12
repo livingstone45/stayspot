@@ -1,18 +1,199 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Stayspot</title>
-    <script type="module" crossorigin src="/assets/index-5e48a45e.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/vendor-8b2b8b4f.js">
-    <link rel="modulepreload" crossorigin href="/assets/charts-9ec29004.js">
-    <link rel="modulepreload" crossorigin href="/assets/router-5c3dff30.js">
-    <link rel="modulepreload" crossorigin href="/assets/maps-f59a35be.js">
-    <link rel="stylesheet" href="/assets/index-8579bb94.css">
-  </head>
-  <body>
-    <div id="root"></div>
-    
-  </body>
-  </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StaySpot - Property Management System</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container { 
+            text-align: center; 
+            background: white; 
+            padding: 60px 40px; 
+            border-radius: 15px; 
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            max-width: 700px;
+            animation: slideUp 0.6s ease-out;
+        }
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        h1 { 
+            color: #667eea; 
+            font-size: 3em; 
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .subtitle { 
+            color: #999; 
+            font-size: 1.2em; 
+            margin-bottom: 10px;
+        }
+        .description {
+            color: #666; 
+            font-size: 1em; 
+            line-height: 1.8;
+            margin-bottom: 40px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 40px 0;
+            text-align: left;
+        }
+        .feature {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+        .feature h3 { color: #667eea; margin-bottom: 10px; }
+        .feature p { color: #666; font-size: 0.9em; }
+        .cta-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+        a { 
+            padding: 14px 35px; 
+            border-radius: 8px; 
+            text-decoration: none; 
+            font-weight: 600;
+            font-size: 1em;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+        .btn-primary { 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white; 
+        }
+        .btn-primary:hover { 
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+        }
+        .btn-secondary { 
+            border: 2px solid #667eea; 
+            color: #667eea; 
+            background: white; 
+        }
+        .btn-secondary:hover { 
+            background: #667eea;
+            color: white;
+        }
+        .status-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin: 30px 0;
+        }
+        @media (max-width: 600px) {
+            .status-grid { grid-template-columns: repeat(2, 1fr); }
+            .features { grid-template-columns: 1fr; }
+            h1 { font-size: 2em; }
+            .cta-buttons { flex-direction: column; }
+            a { width: 100%; text-align: center; }
+        }
+        .status-item {
+            background: #f0f4ff;
+            padding: 15px;
+            border-radius: 8px;
+            border: 2px solid #667eea;
+        }
+        .status-item .icon { font-size: 1.8em; margin-bottom: 10px; }
+        .status-item .label { color: #667eea; font-weight: 600; font-size: 0.9em; }
+        .loading-note {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            color: #856404;
+            font-size: 0.95em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🏠 StaySpot</h1>
+        <div class="subtitle">Professional Property Management System</div>
+        <p class="description">
+            Complete solution for landlords, property managers, tenants, and investors. Manage properties, leases, maintenance, and finances all in one place.
+        </p>
+
+        <div class="status-grid">
+            <div class="status-item">
+                <div class="icon">✅</div>
+                <div class="label">Frontend</div>
+            </div>
+            <div class="status-item">
+                <div class="icon">✅</div>
+                <div class="label">Backend</div>
+            </div>
+            <div class="status-item">
+                <div class="icon">✅</div>
+                <div class="label">Database</div>
+            </div>
+            <div class="status-item">
+                <div class="icon">✅</div>
+                <div class="label">Deployed</div>
+            </div>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <h3>🏘️ Property Management</h3>
+                <p>Manage multiple properties with detailed tracking and organization</p>
+            </div>
+            <div class="feature">
+                <h3>💰 Financial Tools</h3>
+                <p>Invoice generation, payment tracking, and financial reports</p>
+            </div>
+            <div class="feature">
+                <h3>👥 Multi-Portal</h3>
+                <p>Separate interfaces for landlords, managers, tenants, and investors</p>
+            </div>
+            <div class="feature">
+                <h3>🔧 Maintenance</h3>
+                <p>Work orders, vendor management, and maintenance scheduling</p>
+            </div>
+        </div>
+
+        <div class="cta-buttons">
+            <a href="https://github.com/livingstone45/stayspot" class="btn-primary">📖 View Code on GitHub</a>
+            <a href="https://github.com/livingstone45/stayspot/actions" class="btn-secondary">📊 Deployment Status</a>
+        </div>
+
+        <div class="loading-note">
+            <strong>⚙️ Note:</strong> The full React application is loading. If you see a blank screen after this page, the backend API might need to be running. Check the <a href="https://github.com/livingstone45/stayspot" target="_blank" style="color: #0066cc;">GitHub repository</a> for backend setup instructions.
+        </div>
+    </div>
+
+    <script>
+        // Auto-redirect to React app after 3 seconds
+        setTimeout(() => {
+            console.log('Attempting to load React app...');
+            // Uncomment to auto-redirect:
+            // window.location.href = './index.html';
+        }, 3000);
+    </script>
+</body>
+</html>
