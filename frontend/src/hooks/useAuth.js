@@ -19,8 +19,9 @@ export const AuthProvider = ({ children }) => {
   // Initialize from localStorage on mount
   useEffect(() => {
     const storedUser = localStorage.getItem('user');
-    const storedToken = localStorage.getItem('accessToken');
-    
+    // Support multiple token keys used across the app and mock service
+    const storedToken = localStorage.getItem('accessToken') || localStorage.getItem('authToken') || localStorage.getItem('mockAuthToken');
+
     if (storedUser) {
       try {
         setUser(JSON.parse(storedUser));
@@ -29,12 +30,12 @@ export const AuthProvider = ({ children }) => {
         localStorage.removeItem('user');
       }
     }
-    
+
     if (storedToken) {
       setToken(storedToken);
       setIsAuthenticated(true);
     }
-    
+
     setIsLoading(false);
   }, []);
   
